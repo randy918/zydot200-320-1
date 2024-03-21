@@ -26,4 +26,12 @@ img {
 .wrapper {
   max-width: 760px;
   margin-inline: auto;
+}
+
+body {
+  background: url("../img/background-main.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: auto;
 }/*# sourceMappingURL=index.css.map */

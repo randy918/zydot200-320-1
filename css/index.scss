@@ -10,35 +10,45 @@ $grey800: rgb(33, 33, 33);
 //? ████████████████████████████████████  RESET
 
 * {
-
     box-sizing: border-box;
-    border: none;
-    margin: 0 auto;
-    padding: 0;
-    font-family: "Fira Sans", sans-serif;
-    font-weight: 700;
-
+    // border: none;
+    // margin: 0 auto;
+    // padding: 0;
+    // font-family: "Fira Sans", sans-serif;
+    // font-weight: 700;
 }
 
-//>  ████████████████████████████████████  AFFECTS SECTION PRODUCT
-:root {
-    --minimum-width: 360px;
-    --minimum-width2: 360px;
-    --ratio: 47/59;
-    --ratio2: 47/30;
-}
+// :root {
+//     --minimum-width: 360px;
+//     --minimum-width2: 360px;
+//     --ratio: 47/59;
+//     --ratio2: 47/30;
+// }
 
+// body::-webkit-scrollbar {
+//     display: none;
+// }
 
-body::-webkit-scrollbar {
-    display: none;
-}
+// img {
+//     display: block;
+// }
 
-img {
-    display: block;
-}
+// .wrapper {
 
-.wrapper {
+//     max-width: 760px;
+//     margin-inline: auto;
+// }
 
-    max-width: 760px;
-    margin-inline: auto;
+//?  ████████████████████████████████████  BODY
+
+//>  ████████████████████████████████████  BACKDROP
+position: relative;
+z-index: -1;
+body {
+
+    background: url("../img/background-main.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: auto;
 }
