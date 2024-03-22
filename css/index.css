@@ -61,7 +61,7 @@ body {
   background: url("../img/background-main.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  height: auto;
+  height: 100vh;
   width: auto;
 }
 
