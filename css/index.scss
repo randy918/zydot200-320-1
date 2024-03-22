@@ -1,5 +1,4 @@
 //? ████████████████████████████████████  GET FONT
-
 @import url("https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,200;0,400;0,700;0,900;1,400;1,700;1,900&display=swap");
 
 //? ████████████████████████████████████  COLORS
@@ -10,45 +9,215 @@ $grey800: rgb(33, 33, 33);
 //? ████████████████████████████████████  RESET
 
 * {
+
     box-sizing: border-box;
-    // border: none;
-    // margin: 0 auto;
-    // padding: 0;
-    // font-family: "Fira Sans", sans-serif;
-    // font-weight: 700;
+    border: none;
+    margin: 0 auto;
+    padding: 0;
+
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 700;
+
 }
 
-// :root {
-//     --minimum-width: 360px;
-//     --minimum-width2: 360px;
-//     --ratio: 47/59;
-//     --ratio2: 47/30;
-// }
+//>  ████████████████████████████████████  AFFECTS SECTION PRODUCT
+:root {
+    --minimum-width: 360px;
+    --minimum-width2: 360px;
+    --ratio: 47/59;
+    --ratio2: 47/30;
+}
 
-// body::-webkit-scrollbar {
-//     display: none;
-// }
 
-// img {
-//     display: block;
-// }
+body::-webkit-scrollbar {
+    display: none;
+}
 
-// .wrapper {
+img {
+    display: block;
+}
 
-//     max-width: 760px;
-//     margin-inline: auto;
-// }
+.wrapper {
+
+    max-width: 760px;
+    margin-inline: auto;
+}
+
+//?  ████████████████████████████████████  TEXT RESET
+
+h1,
+h2,
+h3,
+p {
+    padding: 0;
+    margin: 0;
+}
+
+h3 {
+    color: white;
+}
+
+h4 {
+    color: white;
+    font-weight: 200;
+}
+
+h5 {
+    color: black;
+}
+
+
+.sales-statement {
+    display: block;
+    color: black;
+    text-align: center; // Add thi
+    margin-left: vw;
+    margin-right: 15vw;
+
+}
 
 //?  ████████████████████████████████████  BODY
 
-//>  ████████████████████████████████████  BACKDROP
-position: relative;
-z-index: -1;
 body {
 
-    background: url("../img/background-main.png");
+    background: url("../img/background-main.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    height: 100vh;
+    height: auto;
     width: auto;
 }
+
+//> ████████████████████████████████████  HEADER DEFAULT 
+
+.header__wrapper {
+
+    display: grid;
+    grid-template-rows: 3.5fr 1fr 1fr;
+    grid-template-columns: repeat(10, 1fr);
+    max-width: 760px;
+    height: 30vw;
+    max-height: 228px;
+    background-color: black;
+    border-radius: 0 0 10px 10px;
+
+    .header__item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    //c ████████████████████████████████████  ROW ONE}
+
+    .header__item-1a {
+        grid-area: 1 / 1 / 2 / 4;
+        background: url("../img/1a--1.png");
+        background-size: contain;
+        z-index: 10;
+        width: 100%;
+        background-repeat: no-repeat;
+        transition: all 0.35s ease-in-out;
+
+        &:hover {
+            transform: scale(1.15);
+            transition: all 0.3s ease;
+
+        }
+    }
+
+    .header__item-1b {
+        grid-area: 1 / 4 / 2 / 8;
+        background: url("../img/1b.png");
+        background-size: contain;
+        z-index: 10;
+        width: 100%;
+        background-repeat: no-repeat;
+    }
+
+    .header__item-1c {
+        grid-area: 1 / 8 / 2 / 11;
+        background: url("../img/1c.png");
+        background-size: contain;
+        background-position: left;
+        z-index: 10;
+        width: 90%;
+        background-repeat: no-repeat;
+        transition: all 0.35s ease-in-out;
+
+        &:hover {
+            transform: scale(1.15);
+            transition: all 0.3s ease;
+
+        }
+    }
+
+    //c ████████████████████████████████████  ROW TWO
+
+    .header__item-2a {
+        grid-area: 2 / 1 / 3 / 11;
+        background: url("../img/1a--0.png");
+        background-size: contain;
+        // background-color: green;
+        z-index: 10;
+        width: 100%;
+    }
+
+    //c ████████████████████████████████████  ROW THREE
+
+    .header__item-3a {
+        grid-area: 3 / 1 / 4 / 11;
+        background: url("../img/1a--0.png");
+        background-size: contain;
+        z-index: 10;
+        width: 100%;
+        border-radius: 0 0 0 10px;
+        display: flex;
+    }
+
+    .header__flex-item {
+        color: white;
+    }
+
+    .header__flex-item h3:hover {
+        color: orange;
+        transform: scale(1.15);
+        transition: all 0.3s ease;
+    }
+
+    //c ████████████████████████████████████  GRID BACKDROP
+
+    .header__item-4a {
+        grid-area: 1 / 1 / 4 / 11;
+        background: url("../img/background-nav-blank.png");
+        background-size: cover;
+        z-index: 8;
+        width: 100%;
+        border-radius: 0 0 10px 10px;
+        max-height: 228px;
+
+    }
+
+    //_ ████████████████████████████████████  HEADER MOBILE
+    @media screen and (max-width: 760px) {
+        max-height: none;
+        max-width: none;
+
+
+        h1 {
+            font-size: 4.1vw;
+        }
+
+        h2 {
+            font-size: 3.25vw;
+        }
+
+        h3 {
+            font-size: 2.75vw;
+        }
+
+        h4 {
+            font-size: 2vw;
+        }
+
+    }
+}
+
