@@ -165,4 +165,12 @@ body {
   .header__wrapper h4 {
     font-size: 2vw;
   }
+}
+
+.sales-statement {
+  display: block;
+  color: black;
+  text-align: center;
+  margin-left: 15vw;
+  margin-right: 15vw;
 }/*# sourceMappingURL=index.css.map */

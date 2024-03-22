@@ -87,7 +87,7 @@ body {
     width: auto;
 }
 
-//> ████████████████████████████████████  HEADER DEFAULT 
+
 
 .header__wrapper {
 
@@ -197,10 +197,10 @@ body {
     }
 
     //_ ████████████████████████████████████  HEADER MOBILE
-
     @media screen and (max-width: 760px) {
         max-height: none;
         max-width: none;
+
 
         h1 {
             font-size: 4.1vw;
@@ -219,4 +219,16 @@ body {
         }
 
     }
+}
+
+//>  ████████████████████████████████████  SALES-STATEMENT    
+
+.sales-statement {
+
+    display: block;
+    color: black;
+    text-align: center; // Add thi
+    margin-left: 15vw;
+    margin-right: 15vw;
+
 }
