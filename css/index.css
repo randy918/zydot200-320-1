@@ -173,4 +173,16 @@ body {
   text-align: center;
   margin-left: 15vw;
   margin-right: 15vw;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 760px;
+  height: 100%;
+}
+
+@media screen and (max-width: 760px) {
+  .swiper-slide img {
+    width: 100%;
+  }
 }/*# sourceMappingURL=index.css.map */
