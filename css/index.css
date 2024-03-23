@@ -197,9 +197,10 @@ body {
 .section-product img {
   background-color: gainsboro;
   aspect-ratio: var(--ratio);
-  -o-object-fit: contain;
-     object-fit: contain;
+  -o-object-fit: cover;
+     object-fit: cover;
   width: 100%;
+  height: auto;
 }
 
 @media screen and (max-width: 760px) {
@@ -207,12 +208,5 @@ body {
     display: grid;
     gap: 10px;
     grid-template-columns: repeat(auto-fit, minmax(var(--minimum-width), 1fr));
-  }
-  .section-product img {
-    background-color: gainsboro;
-    aspect-ratio: var(--ratio);
-    -o-object-fit: contain;
-       object-fit: contain;
-    width: 100%;
   }
 }/*# sourceMappingURL=index.css.map */

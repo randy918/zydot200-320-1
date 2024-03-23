@@ -269,8 +269,8 @@ body {
 
     background-color: gainsboro;
     aspect-ratio: var(--ratio);
-    object-fit: contain;
-    width: 100%;
+    object-fit: cover;
+    width: 100%; height: auto;
 
 }
 
@@ -285,11 +285,10 @@ body {
         grid-template-columns: repeat(auto-fit, minmax(var(--minimum-width), 1fr));
     }
 
-    .section-product img {
-        background-color: gainsboro;
-        aspect-ratio: var(--ratio);
-        object-fit: contain;
-        width: 100%;
+    .section-product-ub{
+   
+
+        
     }
 
 }
