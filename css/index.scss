@@ -54,7 +54,7 @@ p {
 }
 
 h3 {
-    color: white;
+    // color: white;
 }
 
 h4 {
@@ -179,9 +179,9 @@ body {
         }
 
         .header__flex-item h3:hover {
-            color: orange;
             transform: scale(1.15);
             transition: all 0.3s ease;
+            color: orange;
         }
 
         //c ████████████████████████████████████  GRID BACKDROP

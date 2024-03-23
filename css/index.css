@@ -36,10 +36,6 @@ p {
   margin: 0;
 }
 
-h3 {
-  color: white;
-}
-
 h4 {
   color: white;
   font-weight: 200;
@@ -137,9 +133,9 @@ body {
     color: white;
   }
   .header__wrapper .header__flex-item h3:hover {
-    color: orange;
     transform: scale(1.15);
     transition: all 0.3s ease;
+    color: orange;
   }
   .header__wrapper .header__item-4a {
     grid-area: 1/1/4/11;
