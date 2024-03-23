@@ -195,6 +195,7 @@ body {
     max-width: 760px;
   }
   .section-product-ub {
+    animation: sky 6s infinite linear;
     background-image: url("../img/pano-ub-1.jpg");
     background-size: cover;
     aspect-ratio: var(--ratio);
@@ -205,6 +206,14 @@ body {
     background-size: cover;
     aspect-ratio: var(--ratio);
     width: 100%;
+  }
+  @keyframes sky {
+    0% {
+      background-position: 0 0;
+    }
+    100% {
+      background-position: -100% 0;
+    }
   }
   @media screen and (max-width: 760px) {
     .section-product {
