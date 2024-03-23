@@ -206,21 +206,23 @@ body {
     animation: sky 33s infinite linear;
     background-image: url("../img/pano50-ub-1.jpg");
     background-size: cover;
-    aspect-ratio: var(--ratio);
-    height: 100%;
-  }
-  .section-product-uc {
-    background-image: url("../img/pano50-ub-1.jpg");
-    background-size: cover;
+    background-repeat: repeat-x;
     aspect-ratio: var(--ratio);
     width: 100%;
+  }
+  .section-product-uc {
+    animation: sky 16.5s infinite linear;
+    background-image: url("../img/panoflat-ub-1.jpg");
+    background-size: cover;
+    background-repeat: repeat-x;
+    aspect-ratio: var(--ratio);
   }
   @keyframes sky {
     0% {
       background-position: 0 0;
     }
     100% {
-      background-position: 950px 0;
+      background-position: 1900px 0;
     }
   }
   @keyframes sky2 {
@@ -228,7 +230,7 @@ body {
       background-position: 0 0;
     }
     100% {
-      background-position: 950px 0;
+      background-position: 1900px 0;
     }
   }
   @media screen and (max-width: 760px) {

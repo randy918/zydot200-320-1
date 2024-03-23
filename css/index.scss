@@ -256,12 +256,6 @@ body {
 
 }
 //>  ████████████████████████████████████  SWIPER MOBILE DEFAULT
-// .swiper-button-prev {
-//     left: calc(50% - 425px);
-// }
-// .swiper-button-next {
-//     right: calc(50% - 425px)
-// }
 
 //_  ████████████████████████████████████  SWIPER DESKTOP 
 @media screen and (min-width: 760px) {
@@ -274,7 +268,7 @@ body {
 }
 
 }
-//> ████████████████████████████████████  PRODUCT DEFAULT 
+//> ████████████████████████████████████  PRODUCT DESKTOP DEFAULT 
 
 @layer twin-products {
     .section-product {
@@ -289,25 +283,30 @@ body {
         animation: sky 33s infinite linear;
         background-image: url('../img/pano50-ub-1.jpg');
         background-size: cover;
+        background-repeat: repeat-x;
         aspect-ratio: var(--ratio);
-        height: 100%;
+        width: 100%;
     }
 
     .section-product-uc {
-        background-image: url('../img/pano50-ub-1.jpg');
+        animation: sky 16.5s infinite linear;
+
+        background-image: url('../img/panoflat-ub-1.jpg');
         background-size: cover;
+        background-repeat: repeat-x;
+
         aspect-ratio: var(--ratio);
-        width: 100%;
+    
 
     }
 
     @keyframes sky {
     0%{background-position: 0 0;}
-    100%{background-position: 950px 0;}
+    100%{background-position: 1900px 0;}
     }
     @keyframes sky2 {
     0%{background-position: 0 0;}
-    100%{background-position: 950px 0;}
+    100%{background-position: 1900px 0;}
     }
 
 
