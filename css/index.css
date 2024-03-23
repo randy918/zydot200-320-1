@@ -186,4 +186,33 @@ body {
   .swiper-slide img {
     width: 100%;
   }
+}
+.section-product {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(var(--minimum-width), 1fr));
+  max-width: 760px;
+}
+
+.section-product img {
+  background-color: gainsboro;
+  aspect-ratio: var(--ratio);
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 100%;
+}
+
+@media screen and (max-width: 760px) {
+  .section-product {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(var(--minimum-width), 1fr));
+  }
+  .section-product img {
+    background-color: gainsboro;
+    aspect-ratio: var(--ratio);
+    -o-object-fit: contain;
+       object-fit: contain;
+    width: 100%;
+  }
 }/*# sourceMappingURL=index.css.map */
