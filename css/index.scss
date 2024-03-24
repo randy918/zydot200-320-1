@@ -20,7 +20,6 @@ $grey800: rgb(33, 33, 33);
 
 }
 
-//>  ████████████████████████████████████  AFFECTS SECTION PRODUCT
 :root {
     --minimum-width: 360px;
     --minimum-width2: 360px;
@@ -87,6 +86,9 @@ body {
     width: auto;
 }
 
+//^ ████████████████████████████████████  SPECIAL
+
+//>  ████████████████████████████████████  HEADER DESKTOP
 @layer base {
 
     .header__wrapper {
@@ -268,14 +270,16 @@ body {
 }
 
 }
+
+
+
 //> ██████████████████ DESKTOP  PRODUCT BACKDROP DEFAULT 
 //c ███████████████████████████████████  BACKGROUND IMAGES
 
-@layer twin-products {
     .section-product {
         display: grid;
         gap: 10px;
-        grid-template-columns: repeat(auto-fit, minmax(var(--minimum-width), 1fr));
+        grid-template-columns: repeat(2, 1fr);
         grid-template-rows: 1fr;
         max-width: 760px;
         margin: 0 auto;
@@ -286,7 +290,6 @@ body {
         z-index: 2;
         animation: sky 33s infinite linear;
         display: flex;
-        width: 100%;
         justify-content: center;
         background-image: url('../img/pano50-ub-1.jpg');
         background-size: cover;
@@ -319,36 +322,89 @@ body {
 
 //_ █████████████████████████████  MOBILE PRODUCT BACKDROP
 //c ███████████████████████████████████  BACKGROUND IMAGES
+@media screen and (max-width: 760px) {
+.section-product {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    max-width: 760px;
+    margin: 0 auto;
+}
 
+.section-product-ub {
+    grid-area: 1 / 1 / 2 / 2;
+    z-index: 2;
+    animation: sky 33s infinite linear;
+    display: flex;
+    justify-content: center;
+    background-image: url('../img/pano50-ub-1.jpg');
+    background-size: cover;
+    background-repeat: repeat-x;
+    aspect-ratio: var(--ratio);
+    width: 100%;
+}
 
+.section-product-uc {
+    grid-area: 1 / 2 / 2 / 3;
+    z-index: 2;
+    animation: sky 16.5s infinite linear;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    background-image: url('../img/panoflat-ub-1.jpg');
+    background-size: cover;
+    background-repeat: repeat-x;
+    aspect-ratio: var(--ratio);
+}
 
-//> ████████████████████████████████████  PRODUCT FOREGROUND DEFAULT 
-//c ███████████████████████████████████  FOREGROUND IMAGES
+@keyframes sky {
+0%{background-position: 0 0;}
+100%{background-position: 1900px 0;}
+}
+@keyframes sky2 {
+0%{background-position: 0 0;}
+100%{background-position: 1900px 0;}
+}
+}
+
+// //> ████████████████████████████████████  PRODUCT FOREGROUND DEFAULT 
+// //c ███████████████████████████████████  FOREGROUND IMAGES
 
     .section-product-ub-foreground {
         grid-area: 1 / 1 / 2 / 2;
+        background-image: url("./img/ub-frame3.png");
+//         grid-area: 1 / 1 / 2 / 2;
         z-index: 200;
-        color: white;
+//         color: white;
+    }
+    .section-product-ub-foreground {
+        grid-area: 1 / 1 / 2 / 2;
+        background-image: url("./img/ub-frame3.png");
+//         grid-area: 1 / 1 / 2 / 2;
+        z-index: 200;
+//         color: white;
     }
 
-    .section-product-uc-foreground {
-        grid-area: 1 / 2 / 2 / 3;
-        z-index: 200;
-        color: white;
-        }
+//     .section-product-uc-foreground {
+//         grid-area: 1 / 2 / 2 / 3;
+//         z-index: 200;
+//         color: white;
+//         }
 
 
-    //_ ████████████████████████████████████  PRODUCT FG MOBILE
+//     //_ ████████████████████████████████████  PRODUCT FG MOBILE
 
-    @media screen and (max-width: 760px) {
-       
-        .header__item {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
+//     @media screen and (max-width: 760px) {
+     
+//         .section-product {
+//             display: grid;
+//             gap: 10px;
+//             grid-template-columns: 1fr;
+//             grid-template-rows: 1fr 1fr;
+//             width: auto;
+//             margin: 0 auto;
+//         }
+//     }
 
-    }
 
-
-}
