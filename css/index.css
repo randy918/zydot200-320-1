@@ -180,6 +180,11 @@ body {
     width: 760px;
     height: 100%;
   }
+  .swiper-slide2 img {
+    display: block;
+    width: 370px;
+    height: 100%;
+  }
   @media screen and (max-width: 760px) {
     .swiper-slide img {
       width: 100%;
@@ -301,6 +306,18 @@ body {
     width: 70%;
     background-repeat: no-repeat;
   }
+  .product-ub-picture {
+    grid-area: 1/1/2/2;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: auto;
+    background: url("../img/triple-wet1.png");
+    background-size: contain;
+    z-index: 400;
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+  }
   .product-uc-foreground {
     grid-area: 1/2/2/3;
     display: flex;
@@ -317,6 +334,10 @@ body {
       background-repeat: no-repeat;
       width: 70%;
       z-index: 200;
+    }
+    .product-ub-picture {
+      background-image: url("../img/triple-wet1.png");
+      z-index: 500;
     }
     .product-uc-foreground {
       grid-area: 1/2/2/3;
