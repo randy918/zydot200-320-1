@@ -57,7 +57,7 @@ body {
   background: url("../img/background-main.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  height: 100vh;
+  height: 120vh;
   width: auto;
 }
 
@@ -190,7 +190,7 @@ body {
     right: calc(50% - 425px);
   }
 }
-.section-product {
+.product__wrapper {
   display: grid;
   gap: 10px;
   grid-template-columns: repeat(2, 1fr);
@@ -199,11 +199,10 @@ body {
   margin: 0 auto;
 }
 
-.section-product-ub {
+.product-ub {
   grid-area: 1/1/2/2;
   z-index: 2;
   animation: sky 33s infinite linear;
-  display: flex;
   justify-content: center;
   background-image: url("../img/pano50-ub-1.jpg");
   background-size: cover;
@@ -212,11 +211,10 @@ body {
   width: 100%;
 }
 
-.section-product-uc {
+.product-uc {
   grid-area: 1/2/2/3;
   z-index: 2;
   animation: sky 16.5s infinite linear;
-  display: flex;
   width: 100%;
   justify-content: center;
   background-image: url("../img/panoflat-ub-1.jpg");
@@ -242,7 +240,7 @@ body {
   }
 }
 @media screen and (max-width: 760px) {
-  .section-product {
+  .product__wrapper {
     display: grid;
     gap: 10px;
     grid-template-columns: repeat(2, 1fr);
@@ -250,7 +248,7 @@ body {
     max-width: 760px;
     margin: 0 auto;
   }
-  .section-product-ub {
+  .product-ub {
     grid-area: 1/1/2/2;
     z-index: 2;
     animation: sky 33s infinite linear;
@@ -262,7 +260,7 @@ body {
     aspect-ratio: var(--ratio);
     width: 100%;
   }
-  .section-product-uc {
+  .product-uc {
     grid-area: 1/2/2/3;
     z-index: 2;
     animation: sky 16.5s infinite linear;
