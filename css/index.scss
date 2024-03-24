@@ -269,6 +269,7 @@ body {
 
 }
 //> ████████████████████████████████████  PRODUCT DESKTOP DEFAULT 
+//c ███████████████████████████████████  BACKGROUND IMAGES
 
 @layer twin-products {
     .section-product {
@@ -290,14 +291,10 @@ body {
 
     .section-product-uc {
         animation: sky 16.5s infinite linear;
-
         background-image: url('../img/panoflat-ub-1.jpg');
         background-size: cover;
         background-repeat: repeat-x;
-
         aspect-ratio: var(--ratio);
-    
-
     }
 
     @keyframes sky {
@@ -308,7 +305,9 @@ body {
     0%{background-position: 0 0;}
     100%{background-position: 1900px 0;}
     }
-
+    
+//> ████████████████████████████████████  PRODUCT DESKTOP DEFAULT 
+//c ███████████████████████████████████  FOREGROUND IMAGES
 
     //_ ████████████████████████████████████  PRODUCT MOBILE
 
@@ -341,4 +340,12 @@ body {
         }
 
     }
+
+//>  ████████████████████████████████████  PRODUCT FG DEFAULT
+
+
+
+//_  ████████████████████████████████████  PRODUCT FG MOBILE
+
+
 }
