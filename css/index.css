@@ -194,59 +194,10 @@ body {
     right: calc(50% - 425px);
   }
 }
-.product__wrapper {
-  display: grid;
-  gap: 10px;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: 1fr;
-  max-width: 760px;
-  margin: 0 auto;
-}
-
-.product-ub {
-  grid-area: 1/1/2/2;
-  z-index: 42;
-  animation: sky 33s infinite linear;
-  justify-content: center;
-  background-image: url("../img/pano50-ub-1.jpg");
-  background-size: cover;
-  background-repeat: repeat-x;
-  aspect-ratio: var(--ratio);
-  width: 100%;
-}
-
-.product-uc {
-  grid-area: 1/2/2/3;
-  z-index: 2;
-  animation: sky 16.5s infinite linear;
-  width: 100%;
-  justify-content: center;
-  background-image: url("../img/panoflat-ub-1.jpg");
-  background-size: cover;
-  background-repeat: repeat-x;
-  aspect-ratio: var(--ratio);
-}
-
-@keyframes sky {
-  0% {
-    background-position: 0 0;
-  }
-  100% {
-    background-position: 1900px 0;
-  }
-}
-@keyframes sky2 {
-  0% {
-    background-position: 0 0;
-  }
-  100% {
-    background-position: 1900px 0;
-  }
-}
-@media screen and (max-width: 760px) {
+@layer product {
   .product__wrapper {
     display: grid;
-    gap: 1.5vw;
+    gap: 10px;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 1fr;
     max-width: 760px;
@@ -254,9 +205,8 @@ body {
   }
   .product-ub {
     grid-area: 1/1/2/2;
-    z-index: 2;
+    z-index: 42;
     animation: sky 33s infinite linear;
-    display: flex;
     justify-content: center;
     background-image: url("../img/pano50-ub-1.jpg");
     background-size: cover;
@@ -268,8 +218,6 @@ body {
     grid-area: 1/2/2/3;
     z-index: 2;
     animation: sky 16.5s infinite linear;
-    display: flex;
-    max-width: 760px;
     width: 100%;
     justify-content: center;
     background-image: url("../img/panoflat-ub-1.jpg");
@@ -293,19 +241,85 @@ body {
       background-position: 1900px 0;
     }
   }
-}
-.product-ub-foreground {
-  grid-area: 1/1/2/2;
-  background-image: url("../img/ub-frame3.png");
-  background-repeat: no-repeat;
-  width: 100%;
-  z-index: 200;
-}
-
-.product-uc-foreground {
-  grid-area: 1/2/2/3;
-  background-image: url("../img/uc-large2.png");
-  background-repeat: no-repeat;
-  width: 100%;
-  z-index: 200;
+  @media screen and (max-width: 760px) {
+    .product__wrapper {
+      display: grid;
+      gap: 1.5vw;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: 1fr;
+      width: 100%;
+      margin: 0 auto;
+    }
+    .product-ub {
+      grid-area: 1/1/2/2;
+      z-index: 2;
+      animation: sky 33s infinite linear;
+      display: flex;
+      justify-content: center;
+      background-image: url("../img/pano50-ub-1.jpg");
+      background-size: cover;
+      background-repeat: repeat-x;
+      aspect-ratio: var(--ratio);
+      width: 100%;
+    }
+    .product-uc {
+      grid-area: 1/2/2/3;
+      z-index: 2;
+      animation: sky 16.5s infinite linear;
+      display: flex;
+      max-width: 760px;
+      width: 100%;
+      justify-content: center;
+      background-image: url("../img/panoflat-ub-1.jpg");
+      background-size: cover;
+      background-repeat: repeat-x;
+      aspect-ratio: var(--ratio);
+    }
+    @keyframes sky {
+      0% {
+        background-position: 0 0;
+      }
+      100% {
+        background-position: 1900px 0;
+      }
+    }
+    @keyframes sky2 {
+      0% {
+        background-position: 0 0;
+      }
+      100% {
+        background-position: 1900px 0;
+      }
+    }
+  }
+  .product-ub-foreground {
+    display: flex;
+    background: url("../img/1a--1.png");
+    background-size: contain;
+    z-index: 10;
+    width: 100%;
+    background-repeat: no-repeat;
+  }
+  .product-uc-foreground {
+    display: flex;
+    background: url("../img/1a--1.png");
+    background-size: contain;
+    z-index: 10;
+    width: 100%;
+    background-repeat: no-repeat;
+  }
+  .product-ub-foreground {
+    grid-area: 1/1/2/2;
+    background-image: url("../img/ub-frame3.png");
+    background-repeat: no-repeat;
+    width: 100%;
+    z-index: 200;
+  }
+  .product-uc-foreground {
+    grid-area: 1/2/2/3;
+    background-image: url("../img/uc-large2.png");
+    background-repeat: no-repeat;
+    width: 100%;
+    z-index: 200;
+  }
 }/*# sourceMappingURL=index.css.map */

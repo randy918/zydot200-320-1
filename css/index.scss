@@ -279,7 +279,7 @@ body {
 
 //> ██████████████████ DESKTOP  PRODUCT BACKDROP DEFAULT 
 //c ███████████████████████████████████  BACKGROUND IMAGES
-
+@layer product {
     .product__wrapper {
         display: grid;
         gap: 10px;
@@ -330,7 +330,7 @@ body {
     gap: 1.5vw;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 1fr;
-    max-width: 760px;
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -375,43 +375,39 @@ body {
 // //c ███████████████████████████████████  FOREGROUND IMAGES
 
     .product-ub-foreground {
-        grid-area: 1 / 1 / 2 / 2;
-        background-image: url("../img/ub-frame3.png");
-        background-repeat: no-repeat;
+        display: flex;
+        background: url("../img/1a--1.png");
+        background-size: contain;
+        z-index: 10;
         width: 100%;
-        
-//         grid-area: 1 / 1 / 2 / 2;
-        z-index: 200;
+        background-repeat: no-repeat;
     }
     .product-uc-foreground {
-        grid-area: 1 / 2 / 2 / 3;
-        background-image: url("../img/uc-large2.png");
-        background-repeat: no-repeat;
+        display: flex;
+        background: url("../img/1a--1.png");
+        background-size: contain;
+        z-index: 10;
         width: 100%;
-
-//         grid-area: 1 / 1 / 2 / 2;
-        z-index: 200;
+        background-repeat: no-repeat;
     }
 
-//     .section-product-uc-foreground {
-//         grid-area: 1 / 2 / 2 / 3;
-//         z-index: 200;
-//         color: white;
-//         }
-
-
 //     //_ ████████████████████████████████████  PRODUCT FG MOBILE
+.product-ub-foreground {
+    grid-area: 1 / 1 / 2 / 2;
+    background-image: url("../img/ub-frame3.png");
+    background-repeat: no-repeat;
+    width: 100%;
+    
+    z-index: 200;
+}
+.product-uc-foreground {
+    grid-area: 1 / 2 / 2 / 3;
+    background-image: url("../img/uc-large2.png");
+    background-repeat: no-repeat;
+    width: 100%;
 
-//     @media screen and (max-width: 760px) {
-     
-//         .section-product {
-//             display: grid;
-//             gap: 10px;
-//             grid-template-columns: 1fr;
-//             grid-template-rows: 1fr 1fr;
-//             width: auto;
-//             margin: 0 auto;
-//         }
+    z-index: 200;
+}
 //     }
-
+}
 
