@@ -22,7 +22,7 @@ const swiper = new Swiper(".swiper", {
     },
   });
 
-const swiperub = new Swiper(".swiperub", {
+const swiper2 = new Swiper(".swiper2", {
     // Optional parameters
     autoplay: {
       delay: 6500,
@@ -34,16 +34,16 @@ const swiperub = new Swiper(".swiperub", {
     lazyloading: true,
     loop: true,
   
-    // If we need pagination
-    pagination: {
-      el: ".swiper-pagination",
-    },
+    // // If we need pagination
+    // pagination: {
+    //   el: ".swiper-pagination",
+    // },
   
-    // Navigation arrows
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
+    // // Navigation arrows
+    // navigation: {
+    //   nextEl: ".swiper-button-next",
+    //   prevEl: ".swiper-button-prev",
+    // },
   
   
   });

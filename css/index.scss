@@ -375,28 +375,32 @@ body {
 // //c ███████████████████████████████████  FOREGROUND IMAGES
 
     .product-ub-foreground {
+        grid-area: 1 / 1 / 2 / 2;
         display: flex;
-        background: url("../img/1a--1.png");
+        background: url("../img/ub-frame4.png");
         background-size: contain;
-        z-index: 10;
-        width: 100%;
+        z-index: 100;
+        width: 70%;
         background-repeat: no-repeat;
     }
     .product-uc-foreground {
+    grid-area: 1 / 2 / 2 / 3;
         display: flex;
-        background: url("../img/1a--1.png");
+        background: url("../img/uc-large2.png");
         background-size: contain;
-        z-index: 10;
+        z-index: 100;
         width: 100%;
         background-repeat: no-repeat;
     }
 
 //     //_ ████████████████████████████████████  PRODUCT FG MOBILE
+
+@media screen and (max-width: 760px) {
 .product-ub-foreground {
     grid-area: 1 / 1 / 2 / 2;
-    background-image: url("../img/ub-frame3.png");
+    background-image: url("../img/ub-frame4.png");
     background-repeat: no-repeat;
-    width: 100%;
+    width: 70%;
     
     z-index: 200;
 }
@@ -410,4 +414,4 @@ body {
 }
 //     }
 }
-
+}

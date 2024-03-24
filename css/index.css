@@ -293,33 +293,37 @@ body {
     }
   }
   .product-ub-foreground {
-    display: flex;
-    background: url("../img/1a--1.png");
-    background-size: contain;
-    z-index: 10;
-    width: 100%;
-    background-repeat: no-repeat;
-  }
-  .product-uc-foreground {
-    display: flex;
-    background: url("../img/1a--1.png");
-    background-size: contain;
-    z-index: 10;
-    width: 100%;
-    background-repeat: no-repeat;
-  }
-  .product-ub-foreground {
     grid-area: 1/1/2/2;
-    background-image: url("../img/ub-frame3.png");
+    display: flex;
+    background: url("../img/ub-frame4.png");
+    background-size: contain;
+    z-index: 100;
+    width: 70%;
     background-repeat: no-repeat;
-    width: 100%;
-    z-index: 200;
   }
   .product-uc-foreground {
     grid-area: 1/2/2/3;
-    background-image: url("../img/uc-large2.png");
-    background-repeat: no-repeat;
+    display: flex;
+    background: url("../img/uc-large2.png");
+    background-size: contain;
+    z-index: 100;
     width: 100%;
-    z-index: 200;
+    background-repeat: no-repeat;
+  }
+  @media screen and (max-width: 760px) {
+    .product-ub-foreground {
+      grid-area: 1/1/2/2;
+      background-image: url("../img/ub-frame4.png");
+      background-repeat: no-repeat;
+      width: 70%;
+      z-index: 200;
+    }
+    .product-uc-foreground {
+      grid-area: 1/2/2/3;
+      background-image: url("../img/uc-large2.png");
+      background-repeat: no-repeat;
+      width: 100%;
+      z-index: 200;
+    }
   }
 }/*# sourceMappingURL=index.css.map */
