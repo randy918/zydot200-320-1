@@ -45,6 +45,10 @@ h5 {
   color: black;
 }
 
+h1 {
+  color: white;
+}
+
 .sales-statement {
   display: block;
   color: white;
@@ -201,7 +205,7 @@ body {
 
 .product-ub {
   grid-area: 1/1/2/2;
-  z-index: 2;
+  z-index: 42;
   animation: sky 33s infinite linear;
   justify-content: center;
   background-image: url("../img/pano50-ub-1.jpg");
@@ -242,7 +246,7 @@ body {
 @media screen and (max-width: 760px) {
   .product__wrapper {
     display: grid;
-    gap: 10px;
+    gap: 1.5vw;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 1fr;
     max-width: 760px;
@@ -290,8 +294,18 @@ body {
     }
   }
 }
-.section-product-ub-foreground {
+.product-ub-foreground {
   grid-area: 1/1/2/2;
-  background-image: url("./img/ub-frame3.png");
+  background-image: url("../img/ub-frame3.png");
+  background-repeat: no-repeat;
+  width: 100%;
+  z-index: 200;
+}
+
+.product-uc-foreground {
+  grid-area: 1/2/2/3;
+  background-image: url("../img/uc-large2.png");
+  background-repeat: no-repeat;
+  width: 100%;
   z-index: 200;
 }/*# sourceMappingURL=index.css.map */
