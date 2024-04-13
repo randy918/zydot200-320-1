@@ -382,23 +382,88 @@ body {
 // //> ████████████████████████████████████  PRODUCT FOREGROUND DEFAULT 
 // //c ███████████████████████████████████  FOREGROUND IMAGES
 
-    .product-ub-foreground {
-        grid-area: 1 / 1 / 2 / 2;
-        display: flex;
-        background: url("../img/ub-fraeme4.png");
-        background-size: contain;
-        z-index: 100;
-        width: 70%;
-        background-repeat: no-repeat;
-    }
+    // .product-ub-foreground {
+    //     grid-area: 1 / 1 / 2 / 2;
+    //     display: flex;
+    //     background: url("../img/ub-fraeme4.png");
+    //     background-size: contain;
+    //     z-index: 100;
+    //     width: 70%;
+    //     background-repeat: no-repeat;
+    // }
 
     .product-ub-picture {
         grid-area: 1 / 1 / 2 / 2;
         display: flex;
         flex-direction: column;
         margin-bottom: auto;
-        background: url("../img/ub-2014.gif");
-        
+        // background: url("https://www.devtwins.com/images/graphics/norway1.jpeg");
+        .container {
+            position: relative;
+            display: block;
+            width: 100%;
+            max-width: 400px;
+            height: 280px;
+            margin: 0 auto;
+          }
+          .pic {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            -webkit-animation: fade 24s infinite;
+            animation: fade 24s infinite;
+          }
+          #pic1 {
+            animation-delay: 0s;
+            background-image: url('https://www.devtwins.com/images/graphics/norway1.jpeg');
+          }
+          #pic2 {
+            background-image: url('https://www.devtwins.com/images/graphics/norway2.jpeg');
+            animation-delay: 8s;
+          }
+          #pic3 {
+            background-image: url('https://www.devtwins.com/images/graphics/norway3.jpeg');
+            animation-delay: 16s;
+          }
+          @-webkit-keyframes fade {
+            0% {
+              opacity: 1;
+            }
+            20% {
+              opacity: 1;
+            }
+            34% {
+              opacity: 0;
+            }
+            88% {
+              opacity: 0;
+            }
+            100% {
+              opacity: 1;
+            }
+          }
+          @keyframes fade {
+            0% {
+              opacity: 1;
+            }
+            20% {
+              opacity: 1;
+            }
+            34% {
+              opacity: 0;
+            }
+            88% {
+              opacity: 0;
+            }
+            100% {
+              opacity: 1;
+            }
+          }
         background-size: contain;
         z-index: 400;
         height: 100%;
@@ -421,16 +486,16 @@ body {
 @media screen and (max-width: 760px) {
 .product-ub-foreground {
     grid-area: 1 / 1 / 2 / 2;
-    background-image: url("../img/ub-frame4.png");
-    background-repeat: no-repeat;
-    width: 70%;
+    // background-image: url("../img/ub-frame4.png");
+    // background-repeat: no-repeat;
+    // width: 70%;
     
-    z-index: 200;
+    // z-index: 200;
 }
 
 .product-ub-picture {
 
-    background-image: url("../img/triple-wet1.png");
+    background-image: url("../img/4-07-24-1132-ub-11.gif");
     z-index: 500;
 
 }
