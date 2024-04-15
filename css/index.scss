@@ -296,12 +296,14 @@ body {
 
 //> ██████████████████ DESKTOP  PRODUCT BACKDROP DEFAULT 
 //c ███████████████████████████████████  BACKGROUND IMAGES
-@layer product {
+
     .product__wrapper {
         display: grid;
         gap: 10px;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: 2, 1fr;
         grid-template-rows: 1fr;
+        width: 760px;
+        height: 34vw;
         max-width: 760px;
         margin: 0 auto;
     }
@@ -518,4 +520,4 @@ body {
 }
 //     }
 }
-}
+
