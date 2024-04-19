@@ -207,6 +207,7 @@ body {
   width: 760px;
   height: 34vw;
   max-width: 760px;
+  max-height: 34vw;
   margin: 0 auto;
 }
 
@@ -226,6 +227,7 @@ body {
   grid-area: 1/2/2/3;
   z-index: 2;
   animation: sky 16.5s infinite linear;
+  display: flex;
   width: 100%;
   justify-content: center;
   background-image: url("../img/panoflat-ub-1.jpg");
@@ -254,7 +256,7 @@ body {
   .product__wrapper {
     display: grid;
     gap: 1.5vw;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 2, 1fr;
     grid-template-rows: 1fr;
     width: 100%;
     margin: 0 auto;
@@ -276,7 +278,6 @@ body {
     z-index: 2;
     animation: sky 16.5s infinite linear;
     display: flex;
-    max-width: 760px;
     width: 100%;
     justify-content: center;
     background-image: url("../img/panoflat-ub-1.jpg");
@@ -305,22 +306,10 @@ body {
   grid-area: 1/1/2/2;
   display: flex;
   flex-direction: column;
-  margin-bottom: auto;
-  background-size: contain;
-  z-index: 400;
-  height: 100%;
-  width: 100%;
-  background-repeat: no-repeat;
+  margin-top: auto;
 }
-.product-ub-picture .container {
-  position: relative;
-  display: block;
-  width: 100%;
-  max-width: 400px;
-  height: 480px;
-  margin: 0 auto;
-}
-.product-ub-picture .pic {
+
+.pic {
   position: absolute;
   top: 0;
   left: 0;
@@ -331,15 +320,18 @@ body {
   background-repeat: no-repeat;
   animation: fade 24s infinite;
 }
-.product-ub-picture #pic1 {
+
+#pic1 {
   animation-delay: 0s;
   background-image: url("../img/1436-triple1.png");
 }
-.product-ub-picture #pic2 {
+
+#pic2 {
   background-image: url("../img/1436-triple2.png");
   animation-delay: 8s;
 }
-.product-ub-picture #pic3 {
+
+#pic3 {
   background-image: url("../img/1436-triple3.png");
   animation-delay: 16s;
 }
@@ -359,12 +351,16 @@ body {
   100% {
     opacity: 1;
   }
+  background-size: contain;
+  z-index: 400;
+  height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
 }
-
 .product-uc-foreground {
   grid-area: 1/2/2/3;
   display: flex;
-  background: url("../img/uc-large2.png");
+  background: url("../img/uc-large-bluebox.png");
   background-size: contain;
   z-index: 100;
   width: 100%;
@@ -375,13 +371,9 @@ body {
   .product-ub-foreground {
     grid-area: 1/1/2/2;
   }
-  .product-ub-picture {
-    background-image: url("../img/4-07-24-1132-ub-11.gif");
-    z-index: 500;
-  }
   .product-uc-foreground {
     grid-area: 1/2/2/3;
-    background-image: url("../img/uc-large2.png");
+    background-image: url("../img/uc-large-bluebox.png");
     background-repeat: no-repeat;
     width: 100%;
     z-index: 200;
