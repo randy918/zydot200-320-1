@@ -24,7 +24,7 @@ const swiper = new Swiper(".swiper", {
   },
 });
 
-//! ████████████████████████████████████  VARIABLES fade out
+//! ████████████████████████████████████  VARIABLES fadeInOut
 const x1 = document.getElementById("product-ua-foreground__1");
 const x2 = document.getElementById("product-ua-foreground__2");
 const x3 = document.getElementById("product-ua-foreground__3");
@@ -41,25 +41,37 @@ var opacity__3 = 0;
 function sleep(ms) {
   return new Promise((resolve) => setTimeout(resolve, ms));
 }
-
-function fadeIn(goIn) {
+function fadeIn() {
 }
-
-function fadeOut(goOut) {
+function fadeOut() {
 }
 function shortInterval(){
 }
 function longInterval(){
 }
-function allOpacities {
 
+function updateOpacities() {
+  console.log("4-21-24-1251");
+
+  x1.style.opacity__0 = opacity__0;
+  x1.style.opacity__1 = opacity__1;
+  x1.style.opacity__2 = opacity__2;
+  x1.style.opacity__3 = opacity__3;
 }
-function fadeInOut(goIn, goOut) {
+
+function fadeInOut() {
+  console.log(opacity__0, opacity__1);
+
+  updateOpacities();
+  console.log("4-21-24-1252");
+
   console.log();
   if (opacity__1 <1) {
 
     opacity__1 += 0.1;
     opacity__0 -= 0.1;
+
+    updateOpacities()
 
   } else {
     opacity__1 = 1;
@@ -70,13 +82,10 @@ function fadeInOut(goIn, goOut) {
 
 }
 
-function tripleJugglerBegin() {
-  // tripleJuggler();
-  // setTimeout(tripleJuggler, 4000);
-}
+
 
 function tripleJuggler() {
-  fadeInOut(0, 0);
+  fadeInOut();
   // fadeInOut(1, 0);
   // fadeInOut(2, 1);
   // fadeInOut(3, 2);

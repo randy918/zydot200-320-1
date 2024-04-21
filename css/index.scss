@@ -536,6 +536,15 @@ body {
     background-repeat: no-repeat;
 }
 //^ ████████████████████████████████████  SPECIAL
+#product-ua-foreground__0 {
+    grid-area: 1 / 1 / 2 / 2;
+    display: flex;
+    background: url("../img/1436-triple0.png");
+    background-size: contain;
+    z-index: 100;
+    width: 100%;
+    background-repeat: no-repeat;
+}
 #product-ua-foreground__1 {
     grid-area: 1 / 1 / 2 / 2;
     display: flex;
