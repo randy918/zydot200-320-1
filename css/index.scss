@@ -529,19 +529,37 @@ body {
 .product-uc-foreground {
     grid-area: 1 / 2 / 2 / 3;
     display: flex;
-    background: url("../img/uc-large-bluebox.png");
+    background: url("../img/uc-large-bluebox2.png");
     background-size: contain;
     z-index: 100;
     width: 100%;
     background-repeat: no-repeat;
 }
-
-.product-ua-foreground {
+//^ ████████████████████████████████████  SPECIAL
+#product-ua-foreground__1 {
     grid-area: 1 / 1 / 2 / 2;
     display: flex;
     background: url("../img/1436-triple1.png");
     background-size: contain;
     z-index: 100;
+    width: 100%;
+    background-repeat: no-repeat;
+}
+#product-ua-foreground__2 {
+    grid-area: 1 / 1 / 2 / 2;
+    display: flex;
+    background: url("../img/1436-triple2.png");
+    background-size: contain;
+    z-index: 600;
+    width: 100%;
+    background-repeat: no-repeat;
+}
+#product-ua-foreground__3 {
+    grid-area: 1 / 1 / 2 / 2;
+    display: flex;
+    background: url("../img/1436-triple3.png");
+    background-size: contain;
+    z-index: 800;
     width: 100%;
     background-repeat: no-repeat;
 }
@@ -567,7 +585,7 @@ body {
 
     .product-uc-foreground {
         grid-area: 1 / 2 / 2 / 3;
-        background-image: url("../img/uc-large-bluebox.png");
+        background-image: url("../img/uc-large-bluebox2.png");
         background-repeat: no-repeat;
         width: 100%;
 
