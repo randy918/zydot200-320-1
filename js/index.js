@@ -53,18 +53,17 @@ function longInterval(){
 }
 
 function updateOpacities() {
-console.log(opacity__0, opacity__1, opacity__2, opacity__3 + 2);
-  x1.style.opacity = opacity__0;
+console.log(opacity__0, opacity__1, opacity__2, opacity__3);
+  x0.style.opacity = opacity__0;
   x1.style.opacity = opacity__1;
-  x1.style.opacity = opacity__2;
-  x1.style.opacity = opacity__3;
+  x2.style.opacity = opacity__2;
+  x3.style.opacity = opacity__3;
 }
 
 function fadeInOut() {
   console.log(opacity__0, opacity__1);
 
   updateOpacities();
-  console.log("4-21-24-1252");
 
   console.log();
   if (opacity__1 <1) {
@@ -78,7 +77,7 @@ function fadeInOut() {
     opacity__1 = 1;
     opacity__0 = 0;
   }
-fadeOut();
+
 
 
 }
