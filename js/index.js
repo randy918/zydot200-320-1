@@ -25,6 +25,7 @@ const swiper = new Swiper(".swiper", {
 });
 
 //! ████████████████████████████████████  VARIABLES fadeInOut
+const x0 = document.getElementById("product-ua-foreground__0");
 const x1 = document.getElementById("product-ua-foreground__1");
 const x2 = document.getElementById("product-ua-foreground__2");
 const x3 = document.getElementById("product-ua-foreground__3");
@@ -44,6 +45,7 @@ function sleep(ms) {
 function fadeIn() {
 }
 function fadeOut() {
+
 }
 function shortInterval(){
 }
@@ -51,12 +53,11 @@ function longInterval(){
 }
 
 function updateOpacities() {
-  console.log("4-21-24-1251");
-
-  x1.style.opacity__0 = opacity__0;
-  x1.style.opacity__1 = opacity__1;
-  x1.style.opacity__2 = opacity__2;
-  x1.style.opacity__3 = opacity__3;
+console.log(opacity__0, opacity__1, opacity__2, opacity__3 + 2);
+  x1.style.opacity = opacity__0;
+  x1.style.opacity = opacity__1;
+  x1.style.opacity = opacity__2;
+  x1.style.opacity = opacity__3;
 }
 
 function fadeInOut() {
@@ -77,7 +78,7 @@ function fadeInOut() {
     opacity__1 = 1;
     opacity__0 = 0;
   }
-
+fadeOut();
 
 
 }
