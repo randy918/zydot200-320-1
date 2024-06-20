@@ -37,54 +37,79 @@ var opacity__2 = 0;
 var opacity__3 = 0;
 // var element = document.querySelector('.product-ua-foreground');
 
-//! ████████████████████████████████████  FUNCTIONS sleep, fadeIn, fadeOut, tripleJuggler
+//! ████████████████████████████████████  FUNCTIONS sleep, updateOpacities, tripleJuggler
 
-function sleep(ms) {
-  return new Promise((resolve) => setTimeout(resolve, ms));
-}
-function fadeIn() {
-}
-function fadeOut() {
+// function sleep(ms) {
+//   return new Promise((resolve) => setTimeout(resolve, ms));
+// }
+// function fadeIn() {
+// }
+// function fadeOut() {
+
+// }
+// function shortInterval(){
+// }
+// function longInterval(){
+// }
+
+// function updateOpacities() {
+// console.log(opacity__0, opacity__1, opacity__2, opacity__3);
+//   x0.style.opacity = opacity__0;
+//   x1.style.opacity = opacity__1;
+//   x2.style.opacity = opacity__2;
+//   x3.style.opacity = opacity__3;
+// }
+
+// function fadeOut(element) {
+
+//   var op = 1;
+//   var timer = setInterval(function (){
+//     if (op <= 0.1) {
+//       clearInterval(timer);
+//       element.style.display = 'none';
+//     }
+//     element.style.opacity = op;
+//     // element.style.filter = 'alpha(opacity=' + op * 100 + ')';
+//     op -= op * 0.1;
+
+//   },  50);
 
 }
-function shortInterval(){
-}
-function longInterval(){
+
+// function fadeIn(element) {
+
+//   var op = 0.1;
+//   element.style.display = 'block';
+//   var timer = setInterval(function (){
+//     if (op >= 1) {
+//       clearInterval(timer);
+      
+//     }
+//     element.style.opacity = op;
+    // element.style.filter = 'alpha(opacity=' + op * 100 + ')';
+//     op += op * 0.1;
+
+//   },  10);
+//   updateOpacities();
+
+// }
+
+// function fadeInOut() {
+// sleep(4000);
+  // setInterval(fadeIn(x2), 1000);
+//  setInterval(fadeIn(x3), 10000);
+  
+//   setInterval(fadeIn(x1), 1000);
+  // sleep(5000);
+  // fadeIn(x3);
+  // updateOpacities();
+
 }
 
-function updateOpacities() {
-console.log(opacity__0, opacity__1, opacity__2, opacity__3);
-  x0.style.opacity = opacity__0;
-  x1.style.opacity = opacity__1;
-  x2.style.opacity = opacity__2;
-  x3.style.opacity = opacity__3;
-}
 
-function fadeInOut() {
-  console.log(opacity__0, opacity__1);
 
+function main() {
   updateOpacities();
-
-  console.log();
-  if (opacity__1 <1) {
-
-    opacity__1 += 0.1;
-    opacity__0 -= 0.1;
-
-    updateOpacities()
-
-  } else {
-    opacity__1 = 1;
-    opacity__0 = 0;
-  }
-
-
-
-}
-
-
-
-function tripleJuggler() {
   fadeInOut();
   // fadeInOut(1, 0);
   // fadeInOut(2, 1);
@@ -92,7 +117,7 @@ function tripleJuggler() {
   // fadeInOut(0, 3);
 }
 
-tripleJuggler()
+main()
 // for whichOne = 1; whichOne < 4; whichOne++ {
   
 // }

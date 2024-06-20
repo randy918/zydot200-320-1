@@ -72,7 +72,7 @@ body {
     grid-template-columns: repeat(10, 1fr);
     max-width: 760px;
     height: 30vw;
-    max-height: 228px;
+    max-height: 258px;
     background-color: black;
     border-radius: 0 0 10px 10px;
   }
@@ -319,46 +319,46 @@ body {
   background-repeat: no-repeat;
 }
 
-#product-ua-foreground__0 {
-  grid-area: 1/1/2/2;
-  display: flex;
-  background: url("../img/1436-triple0.png");
-  background-size: contain;
-  z-index: 100;
-  width: 100%;
-  background-repeat: no-repeat;
-}
-
 #product-ua-foreground__1 {
   grid-area: 1/1/2/2;
   display: flex;
-  background: url("../img/1436-triple1.png");
+  background-image: url(../img/1436-triple2.png);
+  opacity: 0;
   background-size: contain;
   z-index: 150;
   width: 100%;
   background-repeat: no-repeat;
+  animation-iteration-count: infinite;
+  animation: fade-in ease-in-out 4500ms forwards;
 }
 
-#product-ua-foreground__2 {
-  grid-area: 1/1/2/2;
-  display: flex;
-  background: url("../img/1436-triple2.png");
-  background-size: contain;
-  z-index: 600;
-  width: 100%;
-  background-repeat: no-repeat;
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
-
-#product-ua-foreground__3 {
-  grid-area: 1/1/2/2;
-  display: flex;
-  background: url("../img/1436-triple3.png");
-  background-size: contain;
-  z-index: 800;
-  width: 100%;
-  background-repeat: no-repeat;
+@keyframes fade-out {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }
-
+@keyframes animate {
+  0% {
+    background-image: url(../img/1436-triple1.png);
+  }
+  50% {
+    background-image: url(../img/1436-triple3.png);
+  }
+  100% {
+    background-image: url(../img/1436-triple1.png);
+  }
+}
 @media screen and (max-width: 760px) {
   .product-ub-foreground {
     grid-area: 1/1/2/2;
