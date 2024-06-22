@@ -27,7 +27,6 @@ $grey800: rgb(33, 33, 33);
     --ratio2: 47/30;
 }
 
-
 body::-webkit-scrollbar {
     display: none;
 }
@@ -210,7 +209,6 @@ body {
             max-height: none;
             max-width: none;
 
-
             h1 {
                 font-size: 4.1vw;
             }
@@ -295,7 +293,6 @@ body {
 
 //^ ████████████████████████████████████  SWIPER
 //^ ████████████████████████████████████  TWIN PRODUCTS
-
 
 //> ██████████████████ DESKTOP  PRODUCT MOVING BACKDROP DEFAULT 
 //c ███████████████████████████████████  BACKGROUND IMAGES
@@ -382,7 +379,6 @@ body {
         width: 100%;
     }
 
-
     .product-uc {
         grid-area: 1 / 2 / 2 / 3;
         z-index: 2;
@@ -438,93 +434,6 @@ body {
     margin-top: auto;
 }
     // background: url("https://www.devtwins.com/images/graphics/norway1.jpeg");
-    .container {
-        // position: relative;
-        // display: block;
-        // width: 100%;
-        // max-width: 400px;
-        // height: 480px;
-        // margin: 0 auto;
-    }
-
-//     .pic {
-//         position: absolute;
-//         top: 0;
-//         left: 0;
-//         width: 100%;
-//         height: 100%;
-//         background-size: contain;
-//         background-position: center;
-//         background-repeat: no-repeat;
-//         -webkit-animation: fade 24s infinite;
-//         animation: fade 24s infinite;
-//     }
-
-//     #pic1 {
-//         animation-delay: 0s;
-//         background-image: url("../img/1436-triple1.png");
-//     }
-
-//     #pic2 {
-//         background-image: url('../img/1436-triple2.png');
-//         animation-delay: 8s;
-//     }
-
-//     #pic3 {
-//         background-image: url('../img/1436-triple3.png');
-//         animation-delay: 16s;
-//     }
-
-//     @-webkit-keyframes fade {
-//         0% {
-//             opacity: 1;
-//         }
-
-//         20% {
-//             opacity: 1;
-//         }
-
-//         34% {
-//             opacity: 0;
-//         }
-
-//         88% {
-//             opacity: 0;
-//         }
-
-//         100% {
-//             opacity: 1;
-//         }
-//     }
-
-//     @keyframes fade {
-//         0% {
-//             opacity: 1;
-//         }
-
-//         20% {
-//             opacity: 1;
-//         }
-
-//         34% {
-//             opacity: 0;
-//         }
-
-//         88% {
-//             opacity: 0;
-//         }
-
-//         100% {
-//             opacity: 1;
-//         }
-
-//     background-size: contain;
-//     z-index: 400;
-//     height: 100%;
-//     width: 100%;
-//     background-repeat: no-repeat;
-// }
-
 
 .product-uc-foreground {
     grid-area: 1 / 2 / 2 / 3;
@@ -605,7 +514,97 @@ body {
 }
 
 //>  ████████████████████████████████████  CAROUSEL DESKTOP ISOLATED ATTEMPT ONE
+.carousel__container {
+
+    // display: flex;
+    
+}
+
+.carousel {
+width: 960px;
+height: 423px;
+
+}
+
+.carousel img {
+
+    // display: none;
+    width: inherit;
+    height: inherit;
+    object-fit: cover;
+    position: fixed;
+
+}
+
+.carousel img[class = "active"] {
+display: block;
+animation-name: fadeIn;
+animation-duration: 1.5s;
+
+}
+@keyframes fadeIn {
+
+    from{opacity: .8}
+    to {opacity: 1}
+
+}
+
+.carouselNav {
+height: inherit;
+width: inherit;
+display: flex;
+justify-content: center;
+align-items: flex-end;
+align-content: flex-end;
+flex-wrap: wrap;
 
 
+
+}
+
+.carouselNav * {
+
+z-index: 10;
+background-color: rgba(0, 0, 0, 0.6);
+
+}
+
+.carouselDesc {
+
+    font-family: Arial,  Helvetica,  sans-serif;
+    font-size: 1.5rem;
+    color: white;
+    text-align: center;
+    width: 100%;
+    padding-top: 0.5rem;
+
+}
+
+.carouselDots {
+display: flex;
+justify-content: center;
+width: 100%;
+
+}
+.carouselDots .dot {
+
+    width: 10px;
+    height: 10px;
+    margin: 10px;
+    background-color: gray;
+    border-radius: 50%;
+    cursor: pointer;
+
+}
+
+.carouselDots .active {
+
+    background-color: white;
+
+}
 
 //>  ████████████████████████████████████  CAROUSEL DESKTOP ISOLATED ATTEMPT ONE
+
+//>_ ████████████████████████████████████  CAROUSEL MOBILE ISOLATED ATTEMPT ONE
+
+//>_ ████████████████████████████████████  CAROUSEL MOBILE ISOLATED ATTEMPT ONE
