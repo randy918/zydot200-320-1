@@ -1,12 +1,8 @@
 //>  ████████████████████████████████████  GLOBAL VARIABLES
 
-
 //>  ████████████████████████████████████  QUERY SELECTORS
 
-
 //>  ████████████████████████████████████  FUNCTIONS
-
-
 
 const images = document.querySelectorAll('.carousel img');
 const dots = document.querySelector('.carouselDots');
@@ -27,13 +23,12 @@ updateContent()
   });
   dots.appendChild(span);
 
-
-
 })
 
 function startInterval() {
+if (intervalID) clearInterval(intervalID);
 
-  setInterval(() => {
+  intervalID = setInterval(() => {
     index++;
     if (index === images.length) index = 0;
 
@@ -47,6 +42,12 @@ function updateContent() {
 
   images.forEach(item => item.classList.remove('active'));
   images[index].classList.add('active');
+
+  const dots = document.querySelectorAll('.carouselDots');
+  dots.forEach(item => item.classList.remove('active'));
+  dots[index].classList.add('active');
+  
+
 
 }
 
