@@ -514,92 +514,92 @@ body {
 }
 
 //>  ████████████████████████████████████  CAROUSEL DESKTOP ISOLATED ATTEMPT ONE
-.carousel__container {
-
-    // display: flex;
+#carousel {
+    aspect-ratio: 2.27;
+    width: clamp(300px, 100vw,  760px);
+      // width: 960px;
+      // height: 423px;
+      margin: 0 auto;
+      
+    }
     
-}
-
-.carousel {
-width: 960px;
-height: 423px;
-
-}
-
-.carousel img {
-
-    display: none;
-    width: inherit;
-    height: inherit;
-    object-fit: cover;
-    position: fixed;
-
-}
-
-.carousel img[class = "active"] {
-display: block;
-animation-name: fadeIn;
-animation-duration: 1.5s;
-
-}
-@keyframes fadeIn {
-
-    from{opacity: .0}
-    to {opacity: 1}
-
-}
-
-.carouselNav {
-height: inherit;
-width: inherit;
-display: flex;
-justify-content: center;
-align-items: flex-end;
-align-content: flex-end;
-flex-wrap: wrap;
-
-}
-
-.carouselNav * {
-
-z-index: 10;
-background-color: rgba(0, 0, 0, 0.6);
-
-}
-
-.carouselDesc {
-
-    font-family: Arial,  Helvetica,  sans-serif;
-    font-size: 1.5rem;
-    color: white;
-    text-align: center;
-    width: 100%;
-    padding-top: 0.5rem;
-
-}
-
-.carouselDots {
-display: flex;
-justify-content: center;
-width: 100%;
-
-}
-.carouselDots .dot {
-
-    width: 10px;
-    height: 10px;
-    margin: 10px;
-    background-color: gray;
-    border-radius: 50%;
-    cursor: pointer;
-
-}
-
-.carouselDots .active {
-
-    background-color: white;
-
-}
+    #carousel img {
+    
+      display: none;
+      width: inherit;
+      height: inherit;
+    aspect-ratio: 2.27;
+    
+      object-fit: cover;
+      position: fixed;
+    }
+    
+    #carousel img[class="active"] {
+    
+      display: block;
+      animation-name: fadeIn;
+      animation-duration: 1.5s;
+    }
+    
+    @keyframes fadeIn {
+    
+      from {
+        opacity: .8
+      }
+    
+      to {
+        opacity: 1
+      }
+    }
+    
+    #nav {
+    
+      aspect-ratio: 2.27;
+    width: clamp(300px, 100vw,  690px);
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+      align-content: flex-end;
+      flex-wrap: wrap;
+    }
+    
+    #nav * {
+    
+      z-index: 10;
+      background-color: rgba(0, 0, 0, 0.6);
+    }
+    
+    #desc {
+    
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 1.5rem;
+      color: white;
+      text-align: center;
+      width: 100%;
+      padding-top: 0.5rem;
+    }
+    
+    #dots {
+    
+      display: flex;
+      justify-content: center;
+      width: 100%;
+    }
+    
+    #dots .dot {
+    
+      width: 10px;
+      height: 10px;
+      margin: 10px;
+      background-color: gray;
+      border-radius: 50%;
+      cursor: pointer;
+    }
+    
+    #dots .active {
+    
+      background-color: white;
+    }
 
 //>  ████████████████████████████████████  CAROUSEL DESKTOP ISOLATED ATTEMPT ONE
 

@@ -371,21 +371,23 @@ body {
     z-index: 200;
   }
 }
-.carousel {
-  width: 960px;
-  height: 423px;
+#carousel {
+  aspect-ratio: 2.27;
+  width: clamp(300px, 100vw, 760px);
+  margin: 0 auto;
 }
 
-.carousel img {
+#carousel img {
   display: none;
   width: inherit;
   height: inherit;
+  aspect-ratio: 2.27;
   -o-object-fit: cover;
      object-fit: cover;
   position: fixed;
 }
 
-.carousel img[class=active] {
+#carousel img[class=active] {
   display: block;
   animation-name: fadeIn;
   animation-duration: 1.5s;
@@ -393,15 +395,15 @@ body {
 
 @keyframes fadeIn {
   from {
-    opacity: 0;
+    opacity: 0.8;
   }
   to {
     opacity: 1;
   }
 }
-.carouselNav {
-  height: inherit;
-  width: inherit;
+#nav {
+  aspect-ratio: 2.27;
+  width: clamp(300px, 100vw, 690px);
   display: flex;
   justify-content: center;
   align-items: flex-end;
@@ -409,12 +411,12 @@ body {
   flex-wrap: wrap;
 }
 
-.carouselNav * {
+#nav * {
   z-index: 10;
   background-color: rgba(0, 0, 0, 0.6);
 }
 
-.carouselDesc {
+#desc {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1.5rem;
   color: white;
@@ -423,13 +425,13 @@ body {
   padding-top: 0.5rem;
 }
 
-.carouselDots {
+#dots {
   display: flex;
   justify-content: center;
   width: 100%;
 }
 
-.carouselDots .dot {
+#dots .dot {
   width: 10px;
   height: 10px;
   margin: 10px;
@@ -438,6 +440,6 @@ body {
   cursor: pointer;
 }
 
-.carouselDots .active {
+#dots .active {
   background-color: white;
 }/*# sourceMappingURL=index.css.map */
