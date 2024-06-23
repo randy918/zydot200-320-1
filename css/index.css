@@ -393,7 +393,7 @@ body {
 
 @keyframes fadeIn {
   from {
-    opacity: 0.8;
+    opacity: 0;
   }
   to {
     opacity: 1;
