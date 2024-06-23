@@ -377,6 +377,7 @@ body {
 }
 
 .carousel img {
+  display: none;
   width: inherit;
   height: inherit;
   -o-object-fit: cover;
