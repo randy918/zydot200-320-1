@@ -7,10 +7,13 @@
 const images = document.querySelectorAll('.carousel img');
 const dots = document.querySelector('.carouselDots');
 const desc = document.querySelector('.carouselDesc');
+console.log(images);
+console.log(dots);
 
 let speed = 7000;
 let index = 0;
 let intervalID;
+startInterval()
 
 images.forEach((image, i) => {
   const span = document.createElement('span');
@@ -18,7 +21,6 @@ images.forEach((image, i) => {
   if (i === 0) span.classList.add('active');
   span.addEventListener('click', () => {
     index = i;
-    startInterval()
 updateContent()
   });
   dots.appendChild(span);
@@ -37,15 +39,15 @@ if (intervalID) clearInterval(intervalID);
   }, speed);
 
 }
-
+updateContent()
 function updateContent() {
 
   images.forEach(item => item.classList.remove('active'));
   images[index].classList.add('active');
 
-  const dots = document.querySelectorAll('.carouselDots');
+  // const dots = document.querySelectorAll('.carouselDots');
   dots.forEach(item => item.classList.remove('active'));
-  dots[index].classList.add('active');
+  // dots[index].classList.add('active');
   
 
 
@@ -53,5 +55,4 @@ function updateContent() {
 
 //>  ████████████████████████████████████  ACTUAL PROGRAM
 
-startInterval()
-updateContent()
+// startInterval()
