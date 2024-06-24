@@ -2,7 +2,7 @@
 
 //>  ████████████████████████████████████  QUERY SELECTORS
 
-//>  ████████████████████████████████████  FUNCTIONS
+//_  ████████████████████████████████████  CAROUSEL 1 NO DOTS 
 
 const images = document.querySelectorAll('#carousel img');
 const dots = document.querySelector('#dots');
@@ -11,22 +11,6 @@ const desc = document.querySelector('#desc');
 let speed = 7500;
 let index = 0;
 let intervalID;
-
-// images.forEach((image, i) => {
-
-//     const span = document.createElement('span');
-//     span.className = 'dot';
-//     if (i === 0) span.classList.add('active');
-
-//     span.addEventListener('click', () => {
-//         index = 1;
-//         startInterval();
-//         updateContent();
-
-//     });
-//     dots.appendChild(span);
-
-// })
 
 startInterval();
 
@@ -48,8 +32,6 @@ function updateContent() {
 
     images.forEach(item => item.classList.remove('active'));
     images[index].classList.add('active');
-
-    
 
 }
 
