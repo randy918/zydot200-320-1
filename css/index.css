@@ -61,7 +61,7 @@ body {
   background: url("../img/background-main.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  height: 120vh;
+  height: 185vh;
   width: auto;
 }
 
@@ -178,13 +178,12 @@ body {
 
 .product__wrapper {
   display: grid;
+  justify-content: center;
   gap: 10px;
   grid-template-columns: 2, 1fr;
   grid-template-rows: 1fr;
-  width: 760px;
-  height: 34vw;
-  max-width: 760px;
-  max-height: 34vw;
+  width: 380px;
+  aspect-ratio: 0.8;
   margin: 0 auto;
 }
 
@@ -192,11 +191,10 @@ body {
   grid-area: 1/1/2/2;
   z-index: 42;
   animation: sky 33s infinite linear;
-  justify-content: center;
   background-image: url("../img/pano50-ub-1.jpg");
   background-size: cover;
   background-repeat: repeat-x;
-  aspect-ratio: var(--ratio);
+  aspect-ratio: 0.8;
   width: 100%;
 }
 
@@ -206,11 +204,10 @@ body {
   animation: sky 16.5s infinite linear;
   display: flex;
   width: 100%;
-  justify-content: center;
   background-image: url("../img/panoflat-ub-1.jpg");
   background-size: cover;
   background-repeat: repeat-x;
-  aspect-ratio: var(--ratio);
+  aspect-ratio: 0.8;
 }
 
 @keyframes sky {
@@ -385,37 +382,4 @@ body {
   align-items: flex-end;
   align-content: flex-end;
   flex-wrap: wrap;
-}
-
-#nav * {
-  z-index: 10;
-  background-color: rgba(0, 0, 0, 0.6);
-}
-
-#desc {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 1.5rem;
-  color: white;
-  text-align: center;
-  width: 100%;
-  padding-top: 0.5rem;
-}
-
-#dots {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-}
-
-#dots .dot {
-  width: 10px;
-  height: 10px;
-  margin: 10px;
-  background-color: gray;
-  border-radius: 50%;
-  cursor: pointer;
-}
-
-#dots .active {
-  background-color: white;
 }/*# sourceMappingURL=index.css.map */
