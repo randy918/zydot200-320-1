@@ -314,10 +314,17 @@ body {
 @media screen and (max-width: 760px) {
     .product__wrapper {
         display: grid;
-        gap: 1.5vw;
+        justify-content: center;
+        
+        gap: 10px;
         grid-template-columns: (2, 1fr);
         grid-template-rows: 1fr;
-        width: 100%;
+        width: 100vw;
+        aspect-ratio: 0.8;
+    
+        // height: 34vw;
+        // max-width: 760px;
+        // max-height: 34vw;
         margin: 0 auto;
     }
 
@@ -520,8 +527,7 @@ body {
     }
     
 
-//>  ████████████████████████████████████  CAROUSEL DESKTOP ISOLATED ATTEMPT ONE
+//>  ████████████████████████████████████  FOOTER DEFAULT
 
-//>_ ████████████████████████████████████  CAROUSEL MOBILE ISOLATED ATTEMPT ONE
+//>_ ████████████████████████████████████  FOOTER MOBILE
 
-//>_ ████████████████████████████████████  CAROUSEL MOBILE ISOLATED ATTEMPT ONE

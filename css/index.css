@@ -229,10 +229,12 @@ body {
 @media screen and (max-width: 760px) {
   .product__wrapper {
     display: grid;
-    gap: 1.5vw;
+    justify-content: center;
+    gap: 10px;
     grid-template-columns: 2, 1fr;
     grid-template-rows: 1fr;
-    width: 100%;
+    width: 100vw;
+    aspect-ratio: 0.8;
     margin: 0 auto;
   }
   .product-ub {
