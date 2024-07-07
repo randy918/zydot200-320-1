@@ -95,152 +95,152 @@ body {
 
 //>  ████████████████████████████████████  HEADER DESKTOP
 
-    .header__wrapper {
+.header__wrapper {
 
-        display: grid;
-        grid-template-rows: 3.5fr 1fr 1fr;
-        grid-template-columns: repeat(10, 1fr);
-        max-width: 760px;
-        height: 30vw;
-        max-height: 228px;
-        background-color: black;
-        border-radius: 0 0 10px 10px;
+    display: grid;
+    grid-template-rows: 3.5fr 1fr 1fr;
+    grid-template-columns: repeat(10, 1fr);
+    max-width: 760px;
+    height: 30vw;
+    max-height: 228px;
+    background-color: black;
+    border-radius: 0 0 10px 10px;
 
-        .header__item {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
+    .header__item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 
-        //c ████████████████████████████████████  ROW ONE}
+    //c ████████████████████████████████████  ROW ONE}
 
-        .header__item-1a {
-            grid-area: 1 / 1 / 2 / 4;
-            background: url("../img/1a--1.png");
-            background-size: contain;
-            z-index: 10;
-            width: 100%;
-            background-repeat: no-repeat;
-            transition: all 0.35s ease-in-out;
+    .header__item-1a {
+        grid-area: 1 / 1 / 2 / 4;
+        background: url("../img/1a--1.png");
+        background-size: contain;
+        z-index: 10;
+        width: 100%;
+        background-repeat: no-repeat;
+        transition: all 0.35s ease-in-out;
 
-            &:hover {
-                transform: scale(1.15);
-                transition: all 0.3s ease;
-
-            }
-        }
-
-        .header__item-1b {
-            grid-area: 1 / 4 / 2 / 8;
-            background: url("../img/1b.png");
-            background-size: contain;
-            z-index: 10;
-            width: 100%;
-            background-repeat: no-repeat;
-        }
-
-        .header__item-1c {
-            grid-area: 1 / 8 / 2 / 11;
-            background: url("../img/1c.png");
-            background-size: contain;
-            background-position: left;
-            z-index: 10;
-            width: 90%;
-            background-repeat: no-repeat;
-            transition: all 0.35s ease-in-out;
-
-            &:hover {
-                transform: scale(1.15);
-                transition: all 0.3s ease;
-
-            }
-        }
-
-        //c ████████████████████████████████████  ROW TWO
-
-        .header__item-2a {
-            grid-area: 2 / 1 / 3 / 11;
-            background: url("../img/1a--0.png");
-            background-size: contain;
-            // background-color: green;
-            z-index: 10;
-            width: 100%;
-            color: white;
-        }
-
-        //c ████████████████████████████████████  ROW THREE
-
-        .header__item-3a {
-            grid-area: 3 / 1 / 4 / 11;
-            background: url("../img/1a--0.png");
-            background-size: contain;
-            z-index: 10;
-            width: 100%;
-            border-radius: 0 0 0 10px;
-            display: flex;
-        }
-
-        .header__flex-item {
-            color: white;
-        }
-
-        .header__flex-item h3:hover {
+        &:hover {
             transform: scale(1.15);
             transition: all 0.3s ease;
-            color: orange;
-        }
-
-        //c ████████████████████████████████████  GRID BACKDROP
-
-        .header__item-4a {
-            grid-area: 1 / 1 / 4 / 11;
-            background: url("../img/swiper-5d.png");
-            background-size: cover;
-            z-index: 8;
-            width: 100%;
-            border-radius: 0 0 10px 10px;
-            max-height: 228px;
-
-        }
-
-        //_ ████████████████████████████████████  HEADER MOBILE
-        @media screen and (max-width: 760px) {
-            max-height: none;
-            max-width: none;
-
-            h1 {
-                font-size: 4.1vw;
-            }
-
-            h2 {
-                font-size: 3.25vw;
-            }
-
-            h3 {
-                font-size: 2.75vw;
-            }
-
-            h4 {
-                font-size: 2vw;
-            }
 
         }
     }
 
-    //^ ████████████████████████████████████  HEADER
-    //^ ████████████████████████████████████  SALES STATEMENT
+    .header__item-1b {
+        grid-area: 1 / 4 / 2 / 8;
+        background: url("../img/1b.png");
+        background-size: contain;
+        z-index: 10;
+        width: 100%;
+        background-repeat: no-repeat;
+    }
 
-    //>  ████████████████████████████████████  SALES-STATEMENT    
+    .header__item-1c {
+        grid-area: 1 / 8 / 2 / 11;
+        background: url("../img/1c.png");
+        background-size: contain;
+        background-position: left;
+        z-index: 10;
+        width: 90%;
+        background-repeat: no-repeat;
+        transition: all 0.35s ease-in-out;
 
-    .sales-statement {
+        &:hover {
+            transform: scale(1.15);
+            transition: all 0.3s ease;
 
-        display: block;
+        }
+    }
+
+    //c ████████████████████████████████████  ROW TWO
+
+    .header__item-2a {
+        grid-area: 2 / 1 / 3 / 11;
+        background: url("../img/1a--0.png");
+        background-size: contain;
+        // background-color: green;
+        z-index: 10;
+        width: 100%;
         color: white;
-        text-align: center; // Add thi
-        margin-left: 15vw;
-        margin-right: 15vw;
+    }
+
+    //c ████████████████████████████████████  ROW THREE
+
+    .header__item-3a {
+        grid-area: 3 / 1 / 4 / 11;
+        background: url("../img/1a--0.png");
+        background-size: contain;
+        z-index: 10;
+        width: 100%;
+        border-radius: 0 0 0 10px;
+        display: flex;
+    }
+
+    .header__flex-item {
+        color: white;
+    }
+
+    .header__flex-item h3:hover {
+        transform: scale(1.15);
+        transition: all 0.3s ease;
+        color: orange;
+    }
+
+    //c ████████████████████████████████████  GRID BACKDROP
+
+    .header__item-4a {
+        grid-area: 1 / 1 / 4 / 11;
+        background: url("../img/swiper-5d.png");
+        background-size: cover;
+        z-index: 8;
+        width: 100%;
+        border-radius: 0 0 10px 10px;
+        max-height: 228px;
 
     }
+
+    //_ ████████████████████████████████████  HEADER MOBILE
+    @media screen and (max-width: 760px) {
+        max-height: none;
+        max-width: none;
+
+        h1 {
+            font-size: 4.1vw;
+        }
+
+        h2 {
+            font-size: 3.25vw;
+        }
+
+        h3 {
+            font-size: 2.75vw;
+        }
+
+        h4 {
+            font-size: 2vw;
+        }
+
+    }
+}
+
+//^ ████████████████████████████████████  HEADER
+//^ ████████████████████████████████████  SALES STATEMENT
+
+//>  ████████████████████████████████████  SALES-STATEMENT    
+
+.sales-statement {
+
+    display: block;
+    color: white;
+    text-align: center; // Add thi
+    margin-left: 15vw;
+    margin-right: 15vw;
+
+}
 
 //^ ████████████████████████████████████  TWIN PRODUCTS
 
@@ -250,7 +250,7 @@ body {
 .product__wrapper {
     display: grid;
     justify-content: center;
-    
+
     gap: 10px;
     grid-template-columns: (2, 1fr);
     grid-template-rows: 1fr;
@@ -261,7 +261,7 @@ body {
     // max-width: 760px;
     // max-height: 34vw;
     margin: 0 auto;
-    
+
 }
 
 .product-ub {
@@ -315,13 +315,13 @@ body {
     .product__wrapper {
         display: grid;
         justify-content: center;
-        
+
         gap: 10px;
         grid-template-columns: (2, 1fr);
         grid-template-rows: 1fr;
         width: 100vw;
         aspect-ratio: 0.8;
-    
+
         // height: 34vw;
         // max-width: 760px;
         // max-height: 34vw;
@@ -395,7 +395,8 @@ body {
     flex-direction: column;
     margin-top: auto;
 }
-    // background: url("https://www.devtwins.com/images/graphics/norway1.jpeg");
+
+// background: url("https://www.devtwins.com/images/graphics/norway1.jpeg");
 
 .product-uc-foreground {
     grid-area: 1 / 2 / 2 / 3;
@@ -406,6 +407,7 @@ body {
     width: 100%;
     background-repeat: no-repeat;
 }
+
 //^ ████████████████████████████████████  SPECIAL
 #product-ua-foreground__0 {
     grid-area: 1 / 1 / 2 / 2;
@@ -416,6 +418,7 @@ body {
     width: 100%;
     background-repeat: no-repeat;
 }
+
 #product-ua-foreground__1 {
     grid-area: 1 / 1 / 2 / 2;
     display: flex;
@@ -425,6 +428,7 @@ body {
     width: 100%;
     background-repeat: no-repeat;
 }
+
 #product-ua-foreground__2 {
     grid-area: 1 / 1 / 2 / 2;
     display: flex;
@@ -434,6 +438,7 @@ body {
     width: 100%;
     background-repeat: no-repeat;
 }
+
 #product-ua-foreground__3 {
     grid-area: 1 / 1 / 2 / 2;
     display: flex;
@@ -478,56 +483,71 @@ body {
 //>  ████████████████████████████████████  CAROUSEL DESKTOP ISOLATED ATTEMPT ONE
 #carousel {
     aspect-ratio: 2.27;
-    width: clamp(300px, 100vw,  760px);
+    width: clamp(300px, 100vw, 760px);
     // width-max: 760px;
-      // width: 960px;
-      // height: 423px;
-      margin: 0 auto;
-      
-    }
-    
-    #carousel img {
-    
-      display: none;
-      width: inherit;
-      height: inherit;
+    // width: 960px;
+    // height: 423px;
+    margin: 0 auto;
+
+}
+
+#carousel img {
+
+    display: none;
+    width: inherit;
+    height: inherit;
     aspect-ratio: 2.27;
-    
-      object-fit: cover;
+
+    object-fit: cover;
     //   position: fixed;
-    }
-    
-    #carousel img[class="active"] {
-    
-      display: block;
-      animation-name: fadeIn;
-      animation-duration: 1.5s;
-    }
-    
-    @keyframes fadeIn {
-    
-      from {
+}
+
+#carousel img[class="active"] {
+
+    display: block;
+    animation-name: fadeIn;
+    animation-duration: 1.5s;
+}
+
+@keyframes fadeIn {
+
+    from {
         opacity: .8
-      }
-    
-      to {
+    }
+
+    to {
         opacity: 1
-      }
     }
-    
-    #nav {
-    
-      aspect-ratio: 2.27;
-    width: clamp(300px, 100vw,  690px);
-      display: flex;
-      justify-content: center;
-      align-items: flex-end;
-      align-content: flex-end;
-      flex-wrap: wrap;
-    }
-    
+}
+
+#nav {
+
+    aspect-ratio: 2.27;
+    width: clamp(300px, 100vw, 690px);
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    align-content: flex-end;
+    flex-wrap: wrap;
+}
+
 
 //>  ████████████████████████████████████  FOOTER DEFAULT
 
-//>_ ████████████████████████████████████  FOOTER MOBILE
+footer {
+    width: clamp(300px, 100vw, 760px);
+    height: 30vw;
+    background-color: rgba($color: #000000, $alpha: 0.4);
+padding: 2rem;
+color: white;
 
+}
+
+.footer-grid-container {
+display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 1rem;
+
+}
+
+//>_ ████████████████████████████████████  FOOTER MOBILE

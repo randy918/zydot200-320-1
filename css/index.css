@@ -384,4 +384,18 @@ body {
   align-items: flex-end;
   align-content: flex-end;
   flex-wrap: wrap;
+}
+
+footer {
+  width: clamp(300px, 100vw, 760px);
+  height: 30vw;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 2rem;
+  color: white;
+}
+
+.footer-grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
 }/*# sourceMappingURL=index.css.map */
