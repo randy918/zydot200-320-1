@@ -90,9 +90,6 @@ body {
     width: auto;
 }
 
-//^ ████████████████████████████████████  INTRO
-//^ ████████████████████████████████████  HEADER
-
 //>  ████████████████████████████████████  HEADER DESKTOP
 
 .header__wrapper {
@@ -228,6 +225,7 @@ body {
 }
 
 //^ ████████████████████████████████████  HEADER
+
 //^ ████████████████████████████████████  SALES STATEMENT
 
 //>  ████████████████████████████████████  SALES-STATEMENT    
@@ -242,139 +240,85 @@ body {
 
 }
 
-//^ ████████████████████████████████████  TWIN PRODUCTS
+//_ ████████████████████████████████████  SLIDESHOW IMAGES DESKTOP
 
-//> ██████████████████ DESKTOP  PRODUCT MOVING BACKDROP DEFAULT 
-//c ███████████████████████████████████  BACKGROUND IMAGES
+#image__container {
 
-.product__wrapper {
-    display: grid;
-    justify-content: center;
+max-width: 760px;
+height: auto;
 
-    gap: 10px;
-    grid-template-columns: (2, 1fr);
-    grid-template-rows: 1fr;
-    width: 380px;
-    aspect-ratio: 0.8;
-
-    // height: 34vw;
-    // max-width: 760px;
-    // max-height: 34vw;
-    margin: 0 auto;
+overflow: hidden;
+position: relative;
 
 }
 
-.product-ub {
-    grid-area: 1 / 1 / 2 / 2;
-    z-index: 42;
-    animation: sky 33s infinite linear;
-    // justify-content: center;
-    background-image: url('../img/pano50-ub-1.jpg');
-    background-size: cover;
-    background-repeat: repeat-x;
-    aspect-ratio: .8;
-    width: 100%;
+#image__container > div {
+width: 100%;
+height: auto;
+max-width: 760px;
+position: absolute;
+animation: animate 25s infinite;
+opacity: 0;
+background-size: cover;
+background-position: center center;
+
+}
+#image__container > div:nth-child(2) {
+animation-delay: 5s;
 }
 
-.product-uc {
-    grid-area: 1 / 2 / 2 / 3;
-    z-index: 2;
-    animation: sky 16.5s infinite linear;
-    display: flex;
-    width: 100%;
-    // justify-content: center;
-    background-image: url('../img/panoflat-ub-1.jpg');
-    background-size: cover;
-    background-repeat: repeat-x;
-    aspect-ratio: .8;
+}
+#image__container > div:nth-child(3) {
+animation-delay: 5s;
 }
 
-@keyframes sky {
-    0% {
-        background-position: 0 0;
-    }
-
-    100% {
-        background-position: 1900px 0;
-    }
+}
+#image__container > div:nth-child(4) {
+animation-delay: 10s;
 }
 
-@keyframes sky2 {
-    0% {
-        background-position: 0 0;
-    }
-
-    100% {
-        background-position: 1900px 0;
-    }
 }
+#image__container > div:nth-child(5) {
+animation-delay: 15s;
+}
+
+}
+#image__container > div:nth-child(6) {
+animation-delay: 20s;
+}
+
+}
+#image__container > div:nth-child(7) {
+animation-delay: 25s;
+}
+
+}
+#image__container > div:nth-child(2) {
+animation-delay: 30s;
+}
+//_ ████████████████████████████████████  TWIN PRODUCTS DESKTOP
+
+.video__container {
+max-width: 760px;
+display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 2vw;
+}
+
+.video__container video {
+
+width: 100%;
+height: auto;
+
+}
+
+//> ████████████████████████████████████ TWIN PRODUCTS MOBILE 
+
+
 
 //_ █████████████████████████████  MOBILE PRODUCT MOVING BACKDROP
 //c ███████████████████████████████████  BACKGROUND IMAGES
-@media screen and (max-width: 760px) {
-    .product__wrapper {
-        display: grid;
-        justify-content: center;
 
-        gap: 10px;
-        grid-template-columns: (2, 1fr);
-        grid-template-rows: 1fr;
-        width: 100vw;
-        aspect-ratio: 0.8;
-
-        // height: 34vw;
-        // max-width: 760px;
-        // max-height: 34vw;
-        margin: 0 auto;
-    }
-
-    .product-ub {
-        grid-area: 1 / 1 / 2 / 2;
-        z-index: 2;
-        animation: sky 33s infinite linear;
-        display: flex;
-        justify-content: center;
-        background-image: url('../img/pano50-ub-1.jpg');
-        background-size: cover;
-        background-repeat: repeat-x;
-        aspect-ratio: var(--ratio);
-        width: 100%;
-    }
-
-    .product-uc {
-        grid-area: 1 / 2 / 2 / 3;
-        z-index: 2;
-        animation: sky 16.5s infinite linear;
-        display: flex;
-        // max-width: 760px;
-        width: 100%;
-        justify-content: center;
-        background-image: url('../img/panoflat-ub-1.jpg');
-        background-size: cover;
-        background-repeat: repeat-x;
-        aspect-ratio: var(--ratio);
-    }
-
-    @keyframes sky {
-        0% {
-            background-position: 0 0;
-        }
-
-        100% {
-            background-position: 1900px 0;
-        }
-    }
-
-    @keyframes sky2 {
-        0% {
-            background-position: 0 0;
-        }
-
-        100% {
-            background-position: 1900px 0;
-        }
-    }
-}
 
 // //> ████████████████████████████████████  PRODUCT FOREGROUND DEFAULT 
 // //c ███████████████████████████████████  FOREGROUND IMAGES
@@ -389,65 +333,65 @@ body {
 //     background-repeat: no-repeat;
 // }
 
-.product-ub-picture {
-    grid-area: 1 / 1 / 2 / 2;
-    display: flex;
-    flex-direction: column;
-    margin-top: auto;
-}
+// .product-ub-picture {
+//     grid-area: 1 / 1 / 2 / 2;
+//     display: flex;
+//     flex-direction: column;
+//     margin-top: auto;
+// }
 
 // background: url("https://www.devtwins.com/images/graphics/norway1.jpeg");
 
-.product-uc-foreground {
-    grid-area: 1 / 2 / 2 / 3;
-    display: flex;
-    background: url("../img/uc-large-bluebox2.png");
-    background-size: contain;
-    z-index: 100;
-    width: 100%;
-    background-repeat: no-repeat;
-}
+// .product-uc-foreground {
+//     grid-area: 1 / 2 / 2 / 3;
+//     display: flex;
+//     background: url("../img/uc-large-bluebox2.png");
+//     background-size: contain;
+//     z-index: 100;
+//     width: 100%;
+//     background-repeat: no-repeat;
+// }
 
 //^ ████████████████████████████████████  SPECIAL
-#product-ua-foreground__0 {
-    grid-area: 1 / 1 / 2 / 2;
-    display: flex;
-    background: url("../img/1436-triple0.png");
-    background-size: contain;
-    z-index: 100;
-    width: 100%;
-    background-repeat: no-repeat;
-}
+// #product-ua-foreground__0 {
+//     grid-area: 1 / 1 / 2 / 2;
+//     display: flex;
+//     background: url("../img/1436-triple0.png");
+//     background-size: contain;
+//     z-index: 100;
+//     width: 100%;
+//     background-repeat: no-repeat;
+// }
 
-#product-ua-foreground__1 {
-    grid-area: 1 / 1 / 2 / 2;
-    display: flex;
-    background: url("../img/1436-triple1.png");
-    background-size: contain;
-    z-index: 150;
-    width: 100%;
-    background-repeat: no-repeat;
-}
+// #product-ua-foreground__1 {
+//     grid-area: 1 / 1 / 2 / 2;
+//     display: flex;
+//     background: url("../img/1436-triple1.png");
+//     background-size: contain;
+//     z-index: 150;
+//     width: 100%;
+//     background-repeat: no-repeat;
+// }
 
-#product-ua-foreground__2 {
-    grid-area: 1 / 1 / 2 / 2;
-    display: flex;
-    background: url("../img/1436-triple2.png");
-    background-size: contain;
-    z-index: 600;
-    width: 100%;
-    background-repeat: no-repeat;
-}
+// #product-ua-foreground__2 {
+//     grid-area: 1 / 1 / 2 / 2;
+//     display: flex;
+//     background: url("../img/1436-triple2.png");
+//     background-size: contain;
+//     z-index: 600;
+//     width: 100%;
+//     background-repeat: no-repeat;
+// }
 
-#product-ua-foreground__3 {
-    grid-area: 1 / 1 / 2 / 2;
-    display: flex;
-    background: url("../img/1436-triple3.png");
-    background-size: contain;
-    z-index: 800;
-    width: 100%;
-    background-repeat: no-repeat;
-}
+// #product-ua-foreground__3 {
+//     grid-area: 1 / 1 / 2 / 2;
+//     display: flex;
+//     background: url("../img/1436-triple3.png");
+//     background-size: contain;
+//     z-index: 800;
+//     width: 100%;
+//     background-repeat: no-repeat;
+// }
 
 //     //_ ████████████████████████████████████  PRODUCT FG MOBILE
 

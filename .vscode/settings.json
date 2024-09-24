@@ -28,5 +28,14 @@
         "titleBar.inactiveForeground": "#15202b99"
     },
     "peacock.color": "00DBA0",
-    "liveServer.settings.port": 5502
+    "liveServer.settings.port": 5502,
+    "favorites.resources": [
+        {
+            "filePath": "css/index.scss",
+            "group": "Default"
+        }
+    ],
+    "cSpell.words": [
+        "swiper"
+    ]
 }
