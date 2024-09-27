@@ -242,64 +242,90 @@ body {
 
 //_ ████████████████████████████████████  SLIDESHOW IMAGES DESKTOP
 
-#image__container {
+.image__container {
 
+display: grid;
+grid-template-columns: 1fr;
+grid-template-rows: 1fr;
 max-width: 760px;
-height: auto;
-
-overflow: hidden;
-position: relative;
-
-}
-
-#image__container > div {
 width: 100%;
 height: auto;
+
+}
+
+.image__container img {
+
+width: 100%;
 max-width: 760px;
-position: absolute;
-animation: animate 25s infinite;
-opacity: 0;
-background-size: cover;
-background-position: center center;
 
 }
-#image__container > div:nth-child(2) {
-animation-delay: 5s;
-}
+
+.image__image {
+
 
 }
-#image__container > div:nth-child(3) {
-animation-delay: 5s;
-}
+
+.image__image--1 {
+
+grid-area: 1 / 1 / 2 / 2;
+z-index: 101;
 
 }
-#image__container > div:nth-child(4) {
-animation-delay: 10s;
-}
+
+.image__image--2 {
+
+grid-area: 1 / 1 / 2 / 2;
+z-index: 102;
 
 }
-#image__container > div:nth-child(5) {
-animation-delay: 15s;
-}
+
+.image__image--3 {
+
+grid-area: 1 / 1 / 2 / 2;
+z-index: 103;
 
 }
-#image__container > div:nth-child(6) {
-animation-delay: 20s;
-}
+
+.image__image--4 {
+
+grid-area: 1 / 1 / 2 / 2;
+z-index: 104;
 
 }
-#image__container > div:nth-child(7) {
-animation-delay: 25s;
-}
+
+.image__image--5 {
+
+grid-area: 1 / 1 / 2 / 2;
+z-index: 105;
 
 }
-#image__container > div:nth-child(2) {
-animation-delay: 30s;
+
+.image__image--6 {
+
+grid-area: 1 / 1 / 2 / 2;
+z-index: 106;
+
 }
+
+.image__image--7 {
+
+grid-area: 1 / 1 / 2 / 2;
+z-index: 107;
+
+}
+
+.image__image--8 {
+
+grid-area: 1 / 1 / 2 / 2;
+z-index: 108;
+
+}
+
 //_ ████████████████████████████████████  TWIN PRODUCTS DESKTOP
 
 .video__container {
 max-width: 760px;
+width: 100%;
 display: grid;
 grid-template-columns: 1fr 1fr;
 gap: 2vw;
