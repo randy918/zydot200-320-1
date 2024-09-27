@@ -13,32 +13,53 @@
 
 //< ████████████████████████████████████  VARIABLES
 
-let imageBackgrounds = document.querySelectorAll(".image__image");
-let imageIndex = 0;
-
-//< ████████████████████████████████████  FUNCTIONS
-
-function changeBackground() {
-
-imageBackgrounds[imageIndex].classList.remove("showing");
-imageIndex++;
-if (imageIndex >= imageBackgrounds.length) {
-    imageIndex = 0;
-}
-imageBackgrounds[imageIndex].classList.add("showing");
-console.log(imageIndex);
-
-};
 
 //_$ ████████████████████████████████████  QUERY SELECTORS
 
+const images = document.querySelectorAll('.image__image')
+console.log(images.length);
 
+//< ████████████████████████████████████  FUNCTIONS
+
+function fadeIn(image) {
+    let opacity = 0;
+    const interval = setInterval(() => {
+        if (opacity >= 1) {
+            clearInterval(interval);
+        }
+        image.style.opacity = opacity;
+        opacity += 0.01;
+    }, 10);
+}
+
+function fadeOut(image) {
+    let opacity = 1;
+    const interval = setInterval(() => {
+        if (opacity <= 0) {
+            clearInterval(interval);
+        }
+        image.style.opacity = opacity;
+        opacity -= 0.01;
+    }, 10);
+}
+
+function cycleImages()  {
+let currentImageIndex = 0;
+
+setInterval(() => {
+
+fadeOut(images[currentImageIndex]);
+currentImageIndex = (currentImageIndex + 1) % images.length;
+fadeIn(images[currentImageIndex]);
+
+}, 6000);
+}
 
 //^  ████████████████████████████████████  EVENT LISTENERS
 
 //>  ████████████████████████████████████  REAL PROGRAM
 
-setInterval(changeBackground, 3000);
+cycleImages();
 
 //!  ████████████████████████████████████  FILTER ARRAY 
 
