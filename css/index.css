@@ -4,6 +4,8 @@
   border: none;
   margin: 0 auto;
   padding: 0;
+  list-style: none;
+  text-decoration: none;
   font-family: "Fira Sans", sans-serif;
   font-weight: 700;
 }
@@ -38,7 +40,7 @@ p {
 
 h4 {
   color: white;
-  font-weight: 200;
+  font-weight: 1rem;
 }
 
 h5 {
@@ -295,31 +297,11 @@ body {
 }
 
 footer {
-  width: clamp(300px, 100vw, 760px);
-  height: 30vw;
-  background-color: rgba(0, 0, 0, 0.4);
-  padding: 2rem;
-  color: white;
+  max-width: 760px;
+  padding: 2vw 13% 70px;
 }
 
-.footer-grid-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 1rem;
-}
-
-.footer-column-1, .footer-column-2 {
-  margin-bottom: 1rem;
-}
-
-.footer-products {
-  background: red;
-  padding: 1rem;
-  margin-bottom: 1rem;
-}
-
-.footer-links {
-  background: red;
-  padding: 1rem;
-  margin-bottom: 1rem;
+.footer__container img {
+  text-align: left;
+  width: 12vw;
 }/*# sourceMappingURL=index.css.map */

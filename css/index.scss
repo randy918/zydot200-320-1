@@ -14,7 +14,8 @@ $grey800: rgb(33, 33, 33);
     border: none;
     margin: 0 auto;
     padding: 0;
-
+    list-style: none;
+    text-decoration: none;
     font-family: "Fira Sans", sans-serif;
     font-weight: 700;
 
@@ -57,7 +58,7 @@ h3 {
 
 h4 {
     color: white;
-    font-weight: 200;
+    font-weight: 1rem;
 }
 
 h5 {
@@ -244,97 +245,94 @@ body {
 
 .image__container {
 
-display: grid;
-grid-template-columns: 1fr;
-grid-template-rows: 1fr;
-max-width: 760px;
-width: 100%;
-height: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    max-width: 760px;
+    width: 100%;
+    height: auto;
 
 }
 
 .image__container img {
 
-width: 100%;
-max-width: 760px;
+    width: 100%;
+    max-width: 760px;
 
 }
 
-.image__image {
-
-
-}
+.image__image {}
 
 .image__image--1 {
 
-grid-area: 1 / 1 / 2 / 2;
-z-index: 108;
+    grid-area: 1 / 1 / 2 / 2;
+    z-index: 108;
 
 }
 
 .image__image--2 {
 
-grid-area: 1 / 1 / 2 / 2;
-z-index: 107;
+    grid-area: 1 / 1 / 2 / 2;
+    z-index: 107;
 
 }
 
 .image__image--3 {
 
-grid-area: 1 / 1 / 2 / 2;
-z-index: 106;
+    grid-area: 1 / 1 / 2 / 2;
+    z-index: 106;
 
 }
 
 .image__image--4 {
 
-grid-area: 1 / 1 / 2 / 2;
-z-index: 105;
+    grid-area: 1 / 1 / 2 / 2;
+    z-index: 105;
 
 }
 
 .image__image--5 {
 
-grid-area: 1 / 1 / 2 / 2;
-z-index: 104;
+    grid-area: 1 / 1 / 2 / 2;
+    z-index: 104;
 
 }
 
 .image__image--6 {
 
-grid-area: 1 / 1 / 2 / 2;
-z-index: 103;
+    grid-area: 1 / 1 / 2 / 2;
+    z-index: 103;
 
 }
 
 .image__image--7 {
 
-grid-area: 1 / 1 / 2 / 2;
-z-index: 102;
+    grid-area: 1 / 1 / 2 / 2;
+    z-index: 102;
 
 }
 
 .image__image--8 {
 
-grid-area: 1 / 1 / 2 / 2;
-z-index: 101;
+    grid-area: 1 / 1 / 2 / 2;
+    z-index: 101;
 
 }
 
 //_ ████████████████████████████████████  TWIN PRODUCTS DESKTOP
 
 .video__container {
-max-width: 760px;
-width: 100%;
-display: grid;
-grid-template-columns: 1fr 1fr;
-gap: 2vw;
+    max-width: 760px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2vw;
 }
 
 .video__container video {
 
-width: 100%;
-height: auto;
+    width: 100%;
+    height: auto;
 
 }
 
@@ -505,39 +503,33 @@ height: auto;
 //>  ████████████████████████████████████  FOOTER DEFAULT
 
 footer {
-    width: clamp(300px, 100vw, 760px);
-    height: 30vw;
-    background-color: rgba($color: #000000, $alpha: 0.4);
-padding: 2rem;
-color: white;
+max-width: 760px;
+padding: 2vw 13% 70px;
 
 }
 
-.footer-grid-container {
-display: grid;
-grid-template-columns: 1fr 1fr;
-gap: 1rem;
+.footer__container img {
+text-align: left;
+width: 12vw;
 
 }
 
-.footer-column-1, .footer-column-2 {
-// background: red;
-margin-bottom: 1rem {
-}
-}
+.footer__grid--container {}
 
-.footer-products {
-background: red;
-padding: 1rem;
-margin-bottom: 1rem; 
+.footer__grid {}
 
-}
-.footer-links {
-background: red;
-padding: 1rem;
+.footer-cell {}
 
-margin-bottom: 1rem 
+.footer-header {}
 
-}
+
+.footer-column-1,
+.footer-column-2 {}
+
+.footer-products {}
+
+.footer-links {}
+
+
 
 //>_ ████████████████████████████████████  FOOTER MOBILE
