@@ -1,6 +1,18 @@
 //? ████████████████████████████████████  GET FONT
 @import url("https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,200;0,400;0,700;0,900;1,400;1,700;1,900&display=swap");
 
+//>  ████████████████████████████████████  FONTS
+
+@font-face {
+    font-family: "bold";
+    src: url("../fonts/FiraSans-Black.ttf");
+}
+
+@font-face {
+    font-family: "light";
+    src: url("../fonts/FiraSans-Light.ttf");
+}
+
 //? ████████████████████████████████████  COLORS
 
 $grey400: rgb(170, 170, 170);
@@ -504,12 +516,15 @@ body {
 
 footer {
 max-width: 760px;
-padding: 2vw 13% 70px;
-
+// padding: 2vw 13% 70px;
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(100px, auto));
+gap: 2vw;
 }
 
 .footer__container img {
-text-align: left;
+margin-left: 0;margin-right: 0;
+
 width: 12vw;
 
 }
@@ -533,3 +548,13 @@ width: 12vw;
 
 
 //>_ ████████████████████████████████████  FOOTER MOBILE
+
+@media(max-width: 760px) {
+
+footer {
+
+max-width: 700px;
+
+}
+
+}
