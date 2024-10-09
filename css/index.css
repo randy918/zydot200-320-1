@@ -314,8 +314,8 @@ footer {
 .footer__container img {
   margin-left: 0;
   margin-right: 0;
-  width: clamp(10px, 16vw, 200px);
-  margin-bottom: clamp(0px, 0.5vw, 120px);
+  width: clamp(10px, 16vw, 180px);
+  margin-bottom: clamp(0px, 0.5vw, 12px);
 }
 
 .footer__container li a {
@@ -323,7 +323,15 @@ footer {
   color: white;
   font-family: "light";
   font-size: clamp(8px, 1.35vw, 12px);
-  padding-top: clamp(8px, 1.35vw, 8px);
+  padding-top: clamp(8px, 1.35vw, 12px);
+}
+
+.footer__container li a:hover {
+  display: block;
+  color: yellow;
+  font-family: "light";
+  font-size: clamp(8px, 1.35vw, 12px);
+  padding-top: clamp(8px, 1.35vw, 12px);
 }
 
 .footer__container p {
@@ -332,12 +340,16 @@ footer {
   color: white;
   font-family: "light";
   font-size: clamp(8px, 1.35vw, 12px);
-  padding-top: clamp(8px, 1.35vw, 24px);
+  padding-top: clamp(8px, 1.35vw, 12px);
   max-width: 300px;
 }
 
 .footer__container--left {
   max-width: 300px;
+}
+
+.footer__container h4 {
+  font-size: clamp(10px, 2vw, 20px);
 }
 
 @media (max-width: 760px) {

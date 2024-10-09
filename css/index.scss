@@ -352,99 +352,17 @@ body {
 
 
 
-//_ █████████████████████████████  MOBILE PRODUCT MOVING BACKDROP
-//c ███████████████████████████████████  BACKGROUND IMAGES
 
-
-// //> ████████████████████████████████████  PRODUCT FOREGROUND DEFAULT 
-// //c ███████████████████████████████████  FOREGROUND IMAGES
-
-// .product-ub-foreground {
-//     grid-area: 1 / 1 / 2 / 2;
-//     display: flex;
-//     background: url("../img/ub-fraeme4.png");
-//     background-size: contain;
-//     z-index: 100;
-//     width: 70%;
-//     background-repeat: no-repeat;
-// }
-
-// .product-ub-picture {
-//     grid-area: 1 / 1 / 2 / 2;
-//     display: flex;
-//     flex-direction: column;
-//     margin-top: auto;
-// }
-
-// background: url("https://www.devtwins.com/images/graphics/norway1.jpeg");
-
-// .product-uc-foreground {
-//     grid-area: 1 / 2 / 2 / 3;
-//     display: flex;
-//     background: url("../img/uc-large-bluebox2.png");
-//     background-size: contain;
-//     z-index: 100;
-//     width: 100%;
-//     background-repeat: no-repeat;
-// }
-
-//^ ████████████████████████████████████  SPECIAL
-// #product-ua-foreground__0 {
-//     grid-area: 1 / 1 / 2 / 2;
-//     display: flex;
-//     background: url("../img/1436-triple0.png");
-//     background-size: contain;
-//     z-index: 100;
-//     width: 100%;
-//     background-repeat: no-repeat;
-// }
-
-// #product-ua-foreground__1 {
-//     grid-area: 1 / 1 / 2 / 2;
-//     display: flex;
-//     background: url("../img/1436-triple1.png");
-//     background-size: contain;
-//     z-index: 150;
-//     width: 100%;
-//     background-repeat: no-repeat;
-// }
-
-// #product-ua-foreground__2 {
-//     grid-area: 1 / 1 / 2 / 2;
-//     display: flex;
-//     background: url("../img/1436-triple2.png");
-//     background-size: contain;
-//     z-index: 600;
-//     width: 100%;
-//     background-repeat: no-repeat;
-// }
-
-// #product-ua-foreground__3 {
-//     grid-area: 1 / 1 / 2 / 2;
-//     display: flex;
-//     background: url("../img/1436-triple3.png");
-//     background-size: contain;
-//     z-index: 800;
-//     width: 100%;
-//     background-repeat: no-repeat;
-// }
 
 //     //_ ████████████████████████████████████  PRODUCT FG MOBILE
 
 @media screen and (max-width: 760px) {
     .product-ub-foreground {
         grid-area: 1 / 1 / 2 / 2;
-        // background-image: url("../img/ub-frame4.png");
-        // background-repeat: no-repeat;
-        // width: 70%;
-
-        // z-index: 200;
     }
 
     .product-ub-picture {
 
-        // background-image: url("../img/4-07-24-1132-ub-11.gif");
-        // z-index: 500;
 
     }
 
@@ -464,9 +382,6 @@ body {
 #carousel {
     aspect-ratio: 2.27;
     width: clamp(300px, 100vw, 760px);
-    // width-max: 760px;
-    // width: 960px;
-    // height: 423px;
     margin: 0 auto;
 
 }
@@ -479,7 +394,7 @@ body {
     aspect-ratio: 2.27;
 
     object-fit: cover;
-    //   position: fixed;
+    // //   position: fixed;
 }
 
 #carousel img[class="active"] {
@@ -531,8 +446,8 @@ gap: 2vw;
 margin-left: 0;
 margin-right: 0;
 
-width: clamp(10px, 16vw, 200px);
-margin-bottom: clamp(0px, .5vw, 120px);
+width: clamp(10px, 16vw, 180px);
+margin-bottom: clamp(0px, .5vw, 12px);
 
 }
 
@@ -544,7 +459,17 @@ display: block;
 color:  white;
 font-family: 'light';
 font-size: clamp(8px, 1.35vw, 12px);
-padding-top: clamp(8px, 1.35vw, 8px);
+padding-top: clamp(8px, 1.35vw, 12px);
+}
+
+
+.footer__container li a:hover {
+
+display: block;
+color:  yellow;
+font-family: 'light';
+font-size: clamp(8px, 1.35vw, 12px);
+padding-top: clamp(8px, 1.35vw, 12px);
 }
 
 .footer__container p{
@@ -553,7 +478,7 @@ display: block;
 color:  white;
 font-family: 'light';
 font-size: clamp(8px, 1.35vw, 12px);
-padding-top: clamp(8px, 1.35vw, 24px);
+padding-top: clamp(8px, 1.35vw, 12px);
 max-width: 300px;
 
 }
@@ -561,6 +486,10 @@ max-width: 300px;
 .footer__container--left{
 max-width: 300px;
 
+}
+
+.footer__container h4{
+font-size: clamp(10px, 2vw, 20px);;
 }
 
 
