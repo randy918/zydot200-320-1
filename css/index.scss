@@ -518,38 +518,50 @@ footer {
 max-width: 760px;
 // padding: 2vw 13% 70px;
 display: grid;
-grid-template-columns: repeat(auto-fit, minmax(100px, auto));
+grid-template-columns: repeat(3, 1fr);
 gap: 2vw;
 }
 
 .footer-content h4 {
 
 
-
 }
 
 .footer__container img {
-margin-left: 0;margin-right: 0;
+margin-left: 0;
+margin-right: 0;
 
-width: 12vw;
+width: clamp(10px, 16vw, 200px);
+margin-bottom: clamp(0px, .5vw, 120px);
 
 }
 
-.footer__grid--container {}
-
-.footer__grid {}
-
-.footer-cell {}
-
-.footer-header {}
 
 
-.footer-column-1,
-.footer-column-2 {}
+.footer__container li a{
 
-.footer-products {}
+display: block;
+color:  white;
+font-family: 'light';
+font-size: clamp(8px, 1.35vw, 12px);
+padding-top: clamp(8px, 1.35vw, 8px);
+}
 
-.footer-links {}
+.footer__container p{
+width: 25vw;
+display: block;
+color:  white;
+font-family: 'light';
+font-size: clamp(8px, 1.35vw, 12px);
+padding-top: clamp(8px, 1.35vw, 24px);
+max-width: 300px;
+
+}
+
+.footer__container--left{
+max-width: 300px;
+
+}
 
 
 
