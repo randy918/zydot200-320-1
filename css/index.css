@@ -4,6 +4,10 @@
   src: url("../fonts/FiraSans-Black.ttf");
 }
 @font-face {
+  font-family: "mid";
+  src: url("../fonts/FiraSans-Bold.ttf");
+}
+@font-face {
   font-family: "light";
   src: url("../fonts/FiraSans-Light.ttf");
 }
@@ -357,4 +361,34 @@ footer {
     margin-left: clamp(24px, 3vw, 200px);
     margin-right: clamp(24px, 3vw, 200px);
   }
+}
+.faq__container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-templare-areas: "header header" "column-1 column-2";
+  grid-gap: 20px;
+  padding: 20px;
+  max-width: 760px;
+  background: white;
+}
+
+.faq__question {
+  color: darkred;
+  line-height: 1;
+  padding-top: clamp(6px, 1vw, 160px);
+}
+
+.faq__answer {
+  font-family: "light";
+  font-size: 0.8rem;
+}
+
+.faq__answer span {
+  font-family: "mid";
+  font-size: 0.8rem;
+}
+
+.cap-red {
+  color: darkred;
 }/*# sourceMappingURL=index.css.map */
