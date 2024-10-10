@@ -154,6 +154,9 @@ body {
   transition: all 0.3s ease;
   color: orange;
 }
+.header__wrapper .header__flex-item3 {
+  cursor: pointer;
+}
 .header__wrapper .header__item-4a {
   grid-area: 1/1/4/11;
   background: url("../img/swiper-5d.png");

@@ -63,5 +63,8 @@ cycleImages();
 
 //!  ████████████████████████████████████  FILTER ARRAY 
 
-
+const flexLink3 = document.querySelector('.header__flex-item3');
+    flexLink3.addEventListener('click', () => {
+      window.location.href = "/faq.html";
+    });
 
