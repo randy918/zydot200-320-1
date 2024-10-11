@@ -114,6 +114,7 @@ body {
   z-index: 10;
   width: 100%;
   background-repeat: no-repeat;
+  cursor: pointer;
 }
 .header__wrapper .header__item-1c {
   grid-area: 1/8/2/11;
@@ -165,16 +166,6 @@ body {
   width: 100%;
   border-radius: 0 0 10px 10px;
   max-height: 228px;
-}
-.header__wrapper .header__zydot--invisible-area {
-  position: absolute; /* Or relative, depending on your layout */
-  top: 25px; /* Adjust to position it vertically */
-  left: 350px; /* Adjust to position it horizontally */
-  width: 255px; /* Adjust to cover the desired width */
-  height: 90px; /* Adjust to cover the desired height */
-  opacity: 0;
-  cursor: pointer;
-  z-index: 10;
 }
 @media screen and (max-width: 760px) {
   .header__wrapper {
@@ -389,6 +380,7 @@ footer {
   grid-gap: 20px;
   padding: 20px;
   padding-top: 10px;
+  padding-bottom: 0px;
   max-width: 760px;
   background: white;
   height: auto;
@@ -412,4 +404,26 @@ footer {
 
 .cap-red {
   color: darkred;
+}
+
+tips__container {
+  overflow: hidden;
+}
+
+.float-left {
+  margin-top: clamp(8px, 0.5vw, 20px);
+  width: clamp(10px, 12vw, 100px);
+  float: left;
+  margin-right: clamp(10px, 1.5vw, 20px);
+  aspect-ratio: 6/5;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.span-white {
+  color: white;
+}
+
+.tip-awake {
+  padding-top: 16px;
 }/*# sourceMappingURL=index.css.map */

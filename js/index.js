@@ -68,3 +68,8 @@ const flexLink3 = document.querySelector('.header__flex-item3');
       window.location.href = "/faq.html";
     });
 
+const flexLinkLogo = document.querySelector('.header__item-1b');
+    flexLinkLogo.addEventListener('click', () => {
+      window.location.href = "/index.html";
+    });
+

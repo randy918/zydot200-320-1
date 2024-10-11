@@ -152,6 +152,7 @@ body {
         z-index: 10;
         width: 100%;
         background-repeat: no-repeat;
+        cursor: pointer;
     }
 
     .header__item-1c {
@@ -225,18 +226,18 @@ cursor: pointer;
 
     }
     
-    .header__zydot--invisible-area {
+    // .header__zydot--invisible-area {
 
-        position: absolute; /* Or relative, depending on your layout */
-        top: 25px;          /* Adjust to position it vertically */
-        left: 350px;         /* Adjust to position it horizontally */
-        width: 255px;        /* Adjust to cover the desired width */
-        height: 90px;       /* Adjust to cover the desired height */
-        opacity: 0;
-        cursor: pointer;
-        z-index: 10;   
+    //     position: absolute; /* Or relative, depending on your layout */
+    //     top: 25px;          /* Adjust to position it vertically */
+    //     left: 350px;         /* Adjust to position it horizontally */
+    //     width: 255px;        /* Adjust to cover the desired width */
+    //     height: 90px;       /* Adjust to cover the desired height */
+    //     opacity: 0;
+    //     cursor: pointer;
+    //     z-index: 10;   
 
-    }
+    // }
 
     //_ ████████████████████████████████████  HEADER MOBILE
     @media screen and (max-width: 760px) {
@@ -548,6 +549,7 @@ footer {
     grid-gap: 20px;
     padding: 20px;
     padding-top: 10px;
+    padding-bottom: 0px;
     max-width: 760px;
     background: white;
     height: auto;
@@ -579,5 +581,33 @@ footer {
 .cap-red {
 
 color: darkred;
+
+}
+
+//>  ████████████████████████████████████  TIPS
+
+tips__container {
+overflow: hidden;
+}
+
+.float-left {
+margin-top: clamp(8px, .5vw, 20px);
+width: clamp(10px, 12vw, 100px);;
+float: left;
+margin-right: clamp(10px, 1.5vw, 20px);
+aspect-ratio: 6 / 5;
+object-fit: cover;
+
+}
+
+.span-white {
+
+color: white
+
+}
+
+.tip-awake {
+
+padding-top: 16px;
 
 }
