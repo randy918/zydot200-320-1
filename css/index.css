@@ -9,7 +9,7 @@
 }
 @font-face {
   font-family: "light";
-  src: url("../fonts/FiraSans-Light.ttf");
+  src: url("../fonts/FiraSans-Regular.ttf");
 }
 * {
   box-sizing: border-box;
@@ -75,7 +75,7 @@ body {
   background: url("../img/background-main.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  height: 185vh;
+  height: auto;
   width: auto;
 }
 
@@ -372,10 +372,15 @@ footer {
   height: auto;
 }
 
+.faq__header--container img:hover {
+  max-width: 760px; /* Limits the image width to 760px */
+  width: 100%; /* Makes the image fill its container width */
+  height: auto;
+}
+
 .faq__container {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(1, 1fr);
+  grid-template-columns: 30%, 50%;
   grid-template-areas: "column-1 column-2";
   grid-gap: 20px;
   padding: 20px;
@@ -426,4 +431,112 @@ tips__container {
 
 .tip-awake {
   padding-top: 16px;
+}
+
+.ultimate-blend__container {
+  max-width: 810px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-areas: "left-col right-col";
+  gap: 2vw;
+  background: transparent;
+  color: black;
+  padding: 20px;
+}
+
+.ub__answer {
+  font-family: "light";
+  font-size: 0.8rem;
+  text-indent: 1.5vw;
+}
+
+.ultimate-blend__no-indent {
+  font-family: "light";
+  font-size: 0.8rem;
+  text-indent: 0;
+}
+
+.ultimate-blend__no-indent--line-sp {
+  font-family: "light";
+  font-size: 0.8rem;
+  text-indent: 0;
+  margin-top: 1vw;
+}
+
+.ultimate-blend__container--left {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  height: 100%;
+  color: white;
+  text-align: right;
+}
+
+.ultimate-blend__container--right {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.8);
+  padding: clamp(10px, 2.5vw, 20px);
+}
+
+.ul--ub1-4 li {
+  font-family: "light";
+  font-size: 0.8rem;
+  list-style-type: none; /* Remove default bullet points */
+}
+
+.counter {
+  counter-reset: ub-counter;
+}
+
+.ul--ub1-4 {
+  counter-reset: ub-counter;
+}
+
+.li--ub1-4 p {
+  font-family: "light";
+  font-size: 0.8rem;
+  margin-top: clamp(6px, 1vw, 12px);
+  counter-increment: ub-counter;
+  text-indent: -1em; /* Adjust the value to control the indent */
+  padding-left: 1em;
+}
+
+.li--ub1-4 p::before {
+  content: counter(ub-counter) ".  ";
+  font-family: "bold";
+  color: darkred;
+}
+
+.no-indent {
+  text-indent: 0;
+}
+
+.ul--ub-important-info {
+  list-style: none; /* Remove default bullet */
+  padding-left: 0; /* Remove default padding */
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  height: 100%;
+}
+
+.ub-bullets {
+  text-indent: -0.6em; /* Adjust this value to control the indent */
+  padding-left: 1rem;
+  font-family: "light";
+  padding-top: 0.5vw;
+}
+
+.ub-bullets span {
+  vertical-align: 20%;
+  color: darkred;
+  font-size: clamp(5px, 0.25vw, 20px);
+}
+
+.span-transparent {
+  color: transparent;
 }/*# sourceMappingURL=index.css.map */

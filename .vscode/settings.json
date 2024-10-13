@@ -29,12 +29,7 @@
     },
     "peacock.color": "00DBA0",
     "liveServer.settings.port": 5502,
-    "favorites.resources": [
-        {
-            "filePath": "css/index.scss",
-            "group": "Default"
-        }
-    ],
+    "favorites.resources": [],
     "cSpell.words": [
         "EXPELIT",
         "swiper",
