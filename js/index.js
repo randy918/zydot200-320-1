@@ -45,7 +45,6 @@ function fadeOut(image) {
 
 function cycleImages()  {
 let currentImageIndex = 0;
-
 setInterval(() => {
 
 fadeOut(images[currentImageIndex]);

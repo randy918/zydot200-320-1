@@ -367,14 +367,18 @@ footer {
   }
 }
 .faq__header--container img {
-  max-width: 760px; /* Limits the image width to 760px */
-  width: 100%; /* Makes the image fill its container width */
+  max-width: 760px;
+  /* Limits the image width to 760px */
+  width: 100%;
+  /* Makes the image fill its container width */
   height: auto;
 }
 
 .faq__header--container img:hover {
-  max-width: 760px; /* Limits the image width to 760px */
-  width: 100%; /* Makes the image fill its container width */
+  max-width: 760px;
+  /* Limits the image width to 760px */
+  width: 100%;
+  /* Makes the image fill its container width */
   height: auto;
 }
 
@@ -433,6 +437,30 @@ tips__container {
   padding-top: 16px;
 }
 
+.new__container {
+  display: grid;
+  grid-template-columns: 3fr 7fr;
+  max-width: 760px;
+  width: 100%;
+  gap: clamp(10px, 1.5vw, 20px);
+}
+
+.new__container--left {
+  background-color: red;
+  display: flex;
+  justify-content: start;
+  width: 100%;
+  padding: clamp(10px, 2vw, 20px);
+  text-align: right;
+}
+
+.new__container--right {
+  background-color: blue;
+  display: block;
+  width: 100%;
+  padding: clamp(10px, 2vw, 20px);
+}
+
 .ultimate-blend__container {
   max-width: 810px;
   width: 100%;
@@ -482,6 +510,7 @@ tips__container {
   align-items: stretch;
   height: 100%;
   background: rgba(255, 255, 255, 0.8);
+  max-width: 760px;
   padding: clamp(10px, 2.5vw, 20px);
 }
 
@@ -492,7 +521,8 @@ ul {
 .ul--ub1-4 li {
   font-family: "light";
   font-size: 0.8rem;
-  list-style-type: none; /* Remove default bullet points */
+  list-style-type: none;
+  /* Remove default bullet points */
 }
 
 .counter {
@@ -508,7 +538,8 @@ ul {
   font-size: 0.8rem;
   margin-top: clamp(6px, 1vw, 12px);
   counter-increment: ub-counter;
-  text-indent: -1em; /* Adjust the value to control the indent */
+  text-indent: -1em;
+  /* Adjust the value to control the indent */
   padding-left: 1em;
 }
 
@@ -523,8 +554,10 @@ ul {
 }
 
 .ul--ub-important-info {
-  list-style: none; /* Remove default bullet */
-  padding-left: 0; /* Remove default padding */
+  list-style: none;
+  /* Remove default bullet */
+  padding-left: 0;
+  /* Remove default padding */
   display: flex;
   flex-direction: column;
   align-items: stretch;
@@ -532,7 +565,8 @@ ul {
 }
 
 .ub-bullets {
-  text-indent: -0.6em; /* Adjust this value to control the indent */
+  text-indent: -0.6em;
+  /* Adjust this value to control the indent */
   padding-left: 1rem;
   font-family: "light";
   padding-top: 0.5vw;
@@ -546,4 +580,49 @@ ul {
 
 .span-transparent {
   color: transparent;
-}/*# sourceMappingURL=index.css.map */
+}
+
+.shorten {
+  line-height: 0.6;
+}
+
+.fa-ul {
+  list-style: none;
+  /* Remove default bullets */
+  padding: 0;
+}
+
+.fa-li {
+  display: flex;
+  align-items: flex-start;
+  /* Align items to the top of the container */
+  margin-bottom: 15px;
+}
+
+.fa-li i {
+  margin-right: 10px;
+  /* Add space between icon and text */
+  flex-shrink: 0;
+  /* Prevent icon from shrinking */
+  font-size: 1.2em;
+  /* Adjust icon size if needed */
+}
+
+.fa-li p {
+  width: 80%;
+  /* Adjust width as needed (e.g., 100px, 20em) */
+  text-align: left;
+}
+
+.para-right {
+  width: 100%;
+  font-family: "light";
+  font-size: 0.8rem;
+  padding-top: clamp(6px, 0.5vw, 12px);
+}
+
+.para-right-no-top {
+  width: 100%;
+  font-family: "light";
+  font-size: 0.8rem;
+}/*# sourceMappingURL=ultra-clean.css.map */

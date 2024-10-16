@@ -206,12 +206,12 @@ body {
         color: orange;
     }
 
-.header__flex-item3 {
+    .header__flex-item3 {
 
-cursor: pointer;
+        cursor: pointer;
 
 
-}
+    }
 
     //c ████████████████████████████████████  GRID BACKDROP
 
@@ -225,7 +225,7 @@ cursor: pointer;
         max-height: 228px;
 
     }
-    
+
     // .header__zydot--invisible-area {
 
     //     position: absolute; /* Or relative, depending on your layout */
@@ -533,17 +533,21 @@ footer {
 
 .faq__header--container img {
 
-    max-width: 760px; /* Limits the image width to 760px */
-    width: 100%;     /* Makes the image fill its container width */
-    height: auto;  
+    max-width: 760px;
+    /* Limits the image width to 760px */
+    width: 100%;
+    /* Makes the image fill its container width */
+    height: auto;
 
 }
 
 .faq__header--container img:hover {
 
-    max-width: 760px; /* Limits the image width to 760px */
-    width: 100%;     /* Makes the image fill its container width */
-    height: auto;  
+    max-width: 760px;
+    /* Limits the image width to 760px */
+    width: 100%;
+    /* Makes the image fill its container width */
+    height: auto;
 
 }
 
@@ -588,55 +592,86 @@ footer {
 
 .cap-red {
 
-color: darkred;
+    color: darkred;
 
 }
 
 //>  ████████████████████████████████████  TIPS
 
 tips__container {
-overflow: hidden;
+    overflow: hidden;
 }
 
 .float-left {
-margin-top: clamp(8px, .5vw, 20px);
-width: clamp(10px, 12vw, 100px);;
-float: left;
-margin-right: clamp(10px, 1.5vw, 20px);
-aspect-ratio: 6 / 5;
-object-fit: cover;
+    margin-top: clamp(8px, .5vw, 20px);
+    width: clamp(10px, 12vw, 100px);
+    ;
+    float: left;
+    margin-right: clamp(10px, 1.5vw, 20px);
+    aspect-ratio: 6 / 5;
+    object-fit: cover;
 
 }
 
 .span-white {
 
-color: white
-
+    color: white
 }
 
 .tip-awake {
 
-padding-top: 16px;
+    padding-top: 16px;
 
 }
 
 //>  ████████████████████████████████████  ULTIMATE BLEND
 
+.new__container {
+display: grid;
+grid-template-columns: 3fr 7fr;
+max-width: 760px;
+width: 100%;
+gap: clamp(10px, 1.5vw, 20px);
+
+}
+
+.new__container--left {
+background-color: red;
+display: flex;
+justify-content: start;
+width: 100%;
+padding: clamp(10px, 2vw, 20px);
+text-align: right;
+
+}
+
+
+
+.new__container--right {
+background-color: blue;
+display:block;
+width: 100%;
+padding: clamp(10px, 2vw, 20px);
+
+}
+
+
 .ultimate-blend__container {
 
-// overflow: hidden;
-max-width: 810px;
-width: 100%;
-display: grid;
-// align-items: stretch;
-grid-template-columns: 1fr 2fr;
-grid-template-areas: "left-col right-col";
-gap: clamp(10px, 2vw, 16px);;
-background: transparent;
-// height: 200px;
-color: black;
-padding: 20px;
-padding-top: 0px;
+    // overflow: hidden;
+    max-width: 810px;
+    width: 100%;
+    display: grid;
+    // align-items: stretch;
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas: "left-col right-col";
+    gap: clamp(10px, 2vw, 16px);
+    ;
+    background: transparent;
+    // height: 200px;
+    color: black;
+    padding: 20px;
+    padding-top: 0px;
 }
 
 
@@ -647,47 +682,50 @@ padding-top: 0px;
     text-indent: 1.5vw;
 
 }
+
 .ultimate-blend__no-indent {
 
     font-family: 'light';
     font-size: .8rem;
     text-indent: 0;
-    
+
 
 }
+
 .ultimate-blend__no-indent--line-sp {
 
     font-family: 'light';
     font-size: .8rem;
     text-indent: 0;
     margin-top: 1vw;
-    
-    
+
+
 
 }
 
 .ultimate-blend__container--left {
 
-display:flex;
-flex-direction: column;
-align-items: stretch;
-height: 100%;
-color: white;
-font-size: clamp(16px, 2vw, 20px);;
-text-align: right;
-width: clamp(10px, 30vw, 200px);
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    height: 100%;
+    color: white;
+    font-size: clamp(16px, 2vw, 20px);
+    ;
+    text-align: right;
+    width: clamp(10px, 30vw, 200px);
 
 }
 
 .ultimate-blend__container--right {
 
-display:flex;
-flex-direction: column;
-align-items: stretch;
-height: 100%;
-background: rgba(255, 255, 255, 0.80);
-
-padding: clamp(10px, 2.5vw, 20px);
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.80);
+    max-width: 760px;
+    padding: clamp(10px, 2.5vw, 20px);
 
 
 }
@@ -698,44 +736,47 @@ ul {
 
 }
 
-.ul--ub1-4 li{
+.ul--ub1-4 li {
     font-family: 'light';
     font-size: .8rem;
 
-    list-style-type: none; /* Remove default bullet points */
-    
+    list-style-type: none;
+    /* Remove default bullet points */
+
 
 }
 
 .counter {
 
-counter-reset: ub-counter;
+    counter-reset: ub-counter;
 
 }
 
-.ul--ub1-4{
+.ul--ub1-4 {
 
-counter-reset: ub-counter;
+    counter-reset: ub-counter;
 
 }
 
 
-.li--ub1-4 p{
+.li--ub1-4 p {
 
     font-family: 'light';
     font-size: .8rem;
 
-    margin-top: clamp(6px, 1vw, 12px);;
+    margin-top: clamp(6px, 1vw, 12px);
+    ;
     counter-increment: ub-counter;
-    text-indent: -1em; /* Adjust the value to control the indent */
-    padding-left: 1em; 
+    text-indent: -1em;
+    /* Adjust the value to control the indent */
+    padding-left: 1em;
 }
 
 .li--ub1-4 p::before {
 
-content:counter(ub-counter) ".  ";
-font-family: 'bold';
-color: darkred;
+    content: counter(ub-counter) ".  ";
+    font-family: 'bold';
+    color: darkred;
 
 }
 
@@ -743,40 +784,94 @@ color: darkred;
 
 .no-indent {
 
-text-indent: 0;
+    text-indent: 0;
 
 }
 
-.ul--ub-important-info{
-    list-style: none; /* Remove default bullet */
-    padding-left: 0; /* Remove default padding */
-    display:flex;
+.ul--ub-important-info {
+    list-style: none;
+    /* Remove default bullet */
+    padding-left: 0;
+    /* Remove default padding */
+    display: flex;
     flex-direction: column;
-    
+
     align-items: stretch;
-    height: 100%; 
+    height: 100%;
 }
 
 .ub-bullets {
-    text-indent: -.6em; /* Adjust this value to control the indent */
+    text-indent: -.6em;
+    /* Adjust this value to control the indent */
     padding-left: 1rem;
-font-family: 'light';
-padding-top: .5vw;
+    font-family: 'light';
+    padding-top: .5vw;
 
 }
 
 .ub-bullets span {
-vertical-align: 20%;
-color: darkred;
-font-size: clamp(5px, .25vw, 20px);
+    vertical-align: 20%;
+    color: darkred;
+    font-size: clamp(5px, .25vw, 20px);
 
 }
 
 .span-transparent {
 
-color: transparent;
+    color: transparent;
 
 }
 
 
+.shorten {
 
+    line-height: .6;
+
+}
+
+//>  ████████████████████████████████████  SIMPLER UL LI ATTEMPT
+
+.fa-ul {
+    list-style: none;
+    /* Remove default bullets */
+    padding: 0;
+}
+
+.fa-li {
+    display: flex;
+    align-items: flex-start;
+    /* Align items to the top of the container */
+    margin-bottom: 15px;
+}
+
+.fa-li i {
+    margin-right: 10px;
+    /* Add space between icon and text */
+    flex-shrink: 0;
+    /* Prevent icon from shrinking */
+    font-size: 1.2em;
+    /* Adjust icon size if needed */
+}
+
+.fa-li p {
+    width: 80%;
+    /* Adjust width as needed (e.g., 100px, 20em) */
+    text-align: left;
+}
+
+//>  ████████████████████████████████████  ULTRA BLEND
+
+.para-right {
+
+width: 100%;
+font-family: 'light';
+    font-size: .8rem;
+    padding-top: clamp(6px, .5vw, 12px);;
+}
+
+.para-right-no-top {
+
+width: 100%;
+font-family: 'light';
+    font-size: .8rem;
+}
