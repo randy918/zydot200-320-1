@@ -636,19 +636,22 @@ gap: clamp(10px, 1.5vw, 20px);
 }
 
 .new__container--left {
-background-color: red;
+    font-size: clamp(16px, 2vw, 20px);
+
+background-color: white;
 display: flex;
 justify-content: start;
 width: 100%;
 padding: clamp(10px, 2vw, 20px);
 text-align: right;
+color: white;
 
 }
 
 
 
 .new__container--right {
-background-color: blue;
+background-color: white;
 display:block;
 width: 100%;
 padding: clamp(10px, 2vw, 20px);
@@ -732,7 +735,6 @@ padding: clamp(10px, 2vw, 20px);
 
 ul {
 
-    list-style-position: inside;
 
 }
 
@@ -740,7 +742,7 @@ ul {
     font-family: 'light';
     font-size: .8rem;
 
-    list-style-type: none;
+    // list-style-type: none;
     /* Remove default bullet points */
 
 
@@ -789,7 +791,7 @@ ul {
 }
 
 .ul--ub-important-info {
-    list-style: none;
+    // list-style: none;
     /* Remove default bullet */
     padding-left: 0;
     /* Remove default padding */
@@ -877,3 +879,43 @@ font-family: 'light';
 }
 
 //>  ████████████████████████████████████  ULTRA BLEND SQUARE 2
+
+.new__container--left-plus {
+
+font-size: 3vw;
+    font-family: 'bold';
+    font-size: clamp(16px, 2vw, 20px);
+    padding-top: clamp(6px, 1vw, 12px);
+    ;
+    text-align: right;
+    color: white;
+    width: 100%;
+background-color: red;
+
+}
+
+.new__container--right-plus {
+    background-color: white;
+    display:block;
+    width: 100%;
+    padding: clamp(10px, 2vw, 20px);
+    
+    }
+    
+    .right-ul {
+
+list-style-type: disc;
+
+    }
+    
+    .right-li {
+
+
+
+    }
+    
+    .right-text {
+
+
+
+    }
