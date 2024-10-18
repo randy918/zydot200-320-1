@@ -684,6 +684,7 @@ tips__container {
   font-size: clamp(20px, 3.5vw, 24px);
   font-family: "bold";
   color: blue;
+  clear: both;
 }
 
 .para-right-no-top-step-2-4 {
@@ -702,4 +703,19 @@ tips__container {
 .blue {
   color: blue;
   font-family: "bold";
+}
+
+.sachets-3 {
+  width: 50vw;
+  max-width: 476px;
+  float: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sachets-3 img {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin-right: 4vw;
 }/*# sourceMappingURL=ultra-clean.css.map */
