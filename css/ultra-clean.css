@@ -71,6 +71,12 @@ h1 {
   margin-right: 15vw;
 }
 
+.container__grid {
+  display: grid;
+  background-color: green;
+  width: 42vw;
+}
+
 body {
   background: url("../img/background-main.jpg");
   background-size: cover;
@@ -460,7 +466,7 @@ tips__container {
   background-color: white;
   display: block;
   width: 100%;
-  padding: clamp(10px, 2vw, 20px);
+  padding: clamp(16px, 2vw, 20px);
 }
 
 .ultimate-blend__container {
@@ -627,20 +633,73 @@ tips__container {
   font-size: 3vw;
   font-family: "bold";
   font-size: clamp(16px, 2vw, 20px);
-  padding-top: clamp(6px, 1vw, 12px);
+  padding-top: clamp(6px, 3vw, 18px);
+  padding-left: clamp(6px, 3vw, 18px);
   text-align: right;
   color: white;
   width: 100%;
-  background-color: red;
+  background-color: transparent;
 }
 
 .new__container--right-plus {
   background-color: white;
   display: block;
   width: 100%;
-  padding: clamp(10px, 2vw, 20px);
+  padding: clamp(16px, 2vw, 20px);
 }
 
-.right-ul {
+.right-ul li {
   list-style-type: disc;
+  padding-left: 0.5em;
+  font-family: "light";
+  font-size: 0.8rem;
+  margin-left: clamp(20px, 2vw, 20px);
+  padding-top: clamp(10px, 0.5vw, 20px);
+}
+.right-ul p {
+  font-family: "light";
+  font-size: 0.8rem;
+}
+
+.right-li {
+  list-style-type: disc;
+  padding-left: 1.5em;
+}
+
+.right-text {
+  padding-left: 1.5em;
+}
+
+.ol__original {
+  list-style: disc;
+  margin: 4vw;
+}
+
+.container__flex {
+  display: flex;
+  flex-direction: row;
+}
+
+.para-right-no-top-step-1 {
+  font-size: clamp(20px, 3.5vw, 24px);
+  font-family: "bold";
+  color: blue;
+}
+
+.para-right-no-top-step-2-4 {
+  color: blue;
+  font-size: clamp(20px, 3.5vw, 24px);
+  font-family: "bold";
+  padding-top: clamp(16px, 1vw, 20px);
+}
+
+.para-right-no-top-packet {
+  font-size: clamp(20px, 3.5vw, 24px);
+  font-family: "bold";
+  color: lightseagreen;
+}
+
+.blue {
+  color: blue;
+  font-family: "bold";
 }/*# sourceMappingURL=ultra-clean.css.map */
