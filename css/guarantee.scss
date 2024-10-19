@@ -104,6 +104,7 @@ body {
     background: url("../img/background-main.jpg");
     background-size: cover;
     background-repeat: no-repeat;
+    background-color: blueviolet;
     height: auto;
     width: auto;
 }
@@ -768,7 +769,7 @@ padding-top: .5vw;
 .ub-bullets span {
 vertical-align: 20%;
 color: darkred;
-font-size: clamp(5px, .25vw, 20px);
+font-size: clamp(5px, .5vw, 6px);
 
 }
 
@@ -778,5 +779,16 @@ color: transparent;
 
 }
 
+.short-line p{
 
+text-indent: -27px;
+font-family: 'light';
+    font-size: 10px;;
+}
+
+ul {
+
+
+
+}
 
