@@ -673,10 +673,11 @@ display:flex;
 flex-direction: column;
 align-items: stretch;
 height: 100%;
-color: white;
-font-size: clamp(16px, 2vw, 20px);;
-text-align: right;
-width: clamp(10px, 30vw, 200px);
+width: 7vw;
+// color: white;
+// font-size: clamp(16px, 2vw, 20px);;
+// text-align: right;
+// width: clamp(10px, 30vw, 200px);
 
 }
 
@@ -791,4 +792,7 @@ ul {
 
 
 }
+
+//>  ████████████████████████████████████  ADDITIONAL SPANS
+
 
