@@ -218,7 +218,7 @@ cursor: pointer;
 
     .header__item-4a {
         grid-area: 1 / 1 / 4 / 11;
-        background: url("../img/swiper-5d.png");
+        background: url("../img//background-nav-blank.png");
         background-size: cover;
         z-index: 8;
         width: 100%;
@@ -796,3 +796,29 @@ ul {
 //>  ████████████████████████████████████  ADDITIONAL SPANS
 
 
+.big-bold {
+
+font-family: 'bold';
+font-size: clamp(10px, 4vw, 48px);
+}
+
+.big-medium {
+    font-family: 'light';
+
+    font-size: clamp(18px, 3vw, 30px);
+
+}
+
+.bold {
+    font-family: 'bold';
+
+    font-size: clamp(16px, .8rem, 30px);
+
+
+}
+
+.darkcyan {
+
+color: darkcyan;
+
+}

@@ -559,4 +559,10 @@ ul {
 
 .purchase {
   max-width: 760px;
+}
+
+.sales-statement-read {
+  background: white;
+  padding-top: 2vw;
+  padding-bottom: 2vw;
 }/*# sourceMappingURL=purchase.css.map */

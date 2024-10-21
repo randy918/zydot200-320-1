@@ -718,4 +718,8 @@ tips__container {
   width: 100%;
   height: auto;
   margin-right: 4vw;
+}
+
+.span-bold {
+  font-family: "bold";
 }/*# sourceMappingURL=ultra-clean.css.map */
